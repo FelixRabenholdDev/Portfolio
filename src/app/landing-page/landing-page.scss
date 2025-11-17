@@ -1,7 +1,10 @@
+@import '../../styles.scss';
+
 .page-container {
   height: 100vh;
   overflow-y: auto;
   position: relative;
+  font-family: 'josefin';
 }
 
 .content {

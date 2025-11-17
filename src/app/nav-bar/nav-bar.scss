@@ -1,15 +1,18 @@
+@import '../../styles.scss';
+
 nav.bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: $pr-color;
 }
 
 nav.sticky-top {
   position: sticky;
   top: 0;
   width: 100%;
-  background: white;
+  background-color: $pr-color;
   z-index: 1000;
   border-bottom: 1px solid #ddd;
 }
