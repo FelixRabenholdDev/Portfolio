@@ -2,9 +2,9 @@
 
 .navbar {
   background-color: $pr-color;
-  height: 80px;
-  width: 100%;
-  padding: 0 70px;
+  height: 100px;
+  width:auto;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,14 +17,7 @@
 }
 
 .logo {
-  height: 38px;
-}
-
-.logo-text {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.1;
-  color: $nav-font-color;
+  height: 80px;
 }
 
 .nav-links {
@@ -35,8 +28,8 @@
 
 .nav-links a {
   text-decoration: none;
-  font-size: 20px;
-  color: $nav-font-color;
+  font-size: 28px;
+  color: $bg-color;
   font-weight: 500;
   transition: opacity 0.2s;
 }

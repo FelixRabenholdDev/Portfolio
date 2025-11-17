@@ -17,7 +17,7 @@ $do-color: #97E163;
 @font-face {
     font-family: 'anta';
     src: url('../public/fonts/Anta/Anta-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -25,13 +25,16 @@ body {
   background-color: $bg-color;
   color: $font-color;
   margin: 0;
+  padding-top: 40px;
   font-family: 'josefin', sans-serif;
 }
 
 h1 {
     font-family: 'anta';
+    font-size: 88px;
+    margin: 0;
 }
 
-h2 {
+h3 {
     font-family: 'anta';
 }
