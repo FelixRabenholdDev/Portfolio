@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+.navbar {
+  background-color: $pr-color;
+  height: 80px;
+  width: 100%;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 38px;
+}
+
+.logo-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: $nav-font-color;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: $nav-font-color;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+.contact-link {
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.language-switch .lang {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.language-switch .lang.active {
+  opacity: 1;
+  border-bottom: 2px solid $nav-font-color;
+}

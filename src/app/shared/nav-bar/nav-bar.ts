@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,6 +6,4 @@ import { Component, Input } from '@angular/core';
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.scss',
 })
-export class NavBar {
-  @Input() isSticky = false;
-}
+export class NavBar {}

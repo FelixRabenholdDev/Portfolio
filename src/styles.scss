@@ -2,6 +2,7 @@ $bg-color: #0A383F;
 $pr-color: #F9CB71;
 $se-color:#FFFFFF;
 $font-color: #F8F5EC;
+$nav-font-color: #262E34;
 $in-color: #262e3423;
 $er-color: #E44C36;
 $do-color: #97E163;
@@ -24,5 +25,13 @@ body {
   background-color: $bg-color;
   color: $font-color;
   margin: 0;
-  font-family: josefin-sans, sans-serif;
+  font-family: 'josefin', sans-serif;
+}
+
+h1 {
+    font-family: 'anta';
+}
+
+h2 {
+    font-family: 'anta';
 }
