@@ -38,3 +38,15 @@ h1 {
 h3 {
     font-family: 'anta';
 }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+app-nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

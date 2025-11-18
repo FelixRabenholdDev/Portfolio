@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .portrait {
   width: 700px;
   height: 720px;
@@ -20,14 +22,65 @@
 
 .undertitle {
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+.logo_img {
+  height: 90px;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-left: 30px;
 }
 
-.arrow {
-  margin-top: 80px;
+.logo_and_buttons {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.social_media_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social_media_buttons button {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.icon {
+  width: 30px; 
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.git {
+  background-image: url('../../../../public/assets/img/soc.med.git.svg');
+}
+.git:hover {
+  background-image: url('../../../../public/assets/img/soc.med.git.hover.svg');
+}
+
+.linked {
+  background-image: url('../../../../public/assets/img/soc.med.linked.svg');
+}
+.linked:hover {
+  background-image: url('../../../../public/assets/img/soc.med.linked.hover.svg');
+}
+
+.mail {
+  background-image: url('../../../../public/assets/img/soc.med.mail.svg');
+}
+.mail:hover {
+  background-image: url('../../../../public/assets/img/soc.med.mail.hover.svg');
 }
