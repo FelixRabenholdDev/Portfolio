@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.location_text {
+  font-size: 32px;
+
+  .highlight {
+    color: $pr-color;
+    font-weight: 600;
+  }
+}
+
+.why_me_text {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.lets_talk_button {
+  width: 150px; 
+  height: 55px;
+  padding: 0;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;  
+  align-self: flex-end;
+  background-image: url('../../../../public/assets/img/lets_talk.svg');
+}
+
+.lets_talk_button:hover {
+  background-image: url('../../../../public/assets/img/lets_talk_hover.svg');
+}

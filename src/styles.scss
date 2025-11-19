@@ -21,11 +21,16 @@ $do-color: #97E163;
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: $bg-color;
   color: $font-color;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 100px;
   font-family: 'josefin', sans-serif;
 }
 
@@ -35,14 +40,29 @@ h1 {
     margin: 0;
 }
 
-h3 {
+h2 {
     font-family: 'anta';
+    color: $pr-color;
+    font-size: 60px;
+    text-align: center;
 }
 
 button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex_column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 app-nav-bar {

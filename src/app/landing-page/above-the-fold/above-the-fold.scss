@@ -1,23 +1,15 @@
 @import '../../../styles.scss';
 
+.flex_center {
+  height: calc(100vh - 200px);
+}
+
 .portrait {
   width: 700px;
   height: 720px;
   background-image: url('../../../../public/assets/img/shape.svg');
   background-repeat: no-repeat;
   background-size:contain;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.wrapper_column {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .undertitle {
@@ -65,22 +57,35 @@
 }
 
 .git {
-  background-image: url('../../../../public/assets/img/soc.med.git.svg');
+  background-image: url('../../../../public/assets/img/soc_med_git.svg');
 }
 .git:hover {
-  background-image: url('../../../../public/assets/img/soc.med.git.hover.svg');
+  background-image: url('../../../../public/assets/img/soc_med_git_hover.svg');
 }
 
 .linked {
-  background-image: url('../../../../public/assets/img/soc.med.linked.svg');
+  background-image: url('../../../../public/assets/img/soc_med_linked.svg');
 }
 .linked:hover {
-  background-image: url('../../../../public/assets/img/soc.med.linked.hover.svg');
+  background-image: url('../../../../public/assets/img/soc_med_linked_hover.svg');
 }
 
 .mail {
-  background-image: url('../../../../public/assets/img/soc.med.mail.svg');
+  background-image: url('../../../../public/assets/img/soc_med_mail.svg');
 }
 .mail:hover {
-  background-image: url('../../../../public/assets/img/soc.med.mail.hover.svg');
+  background-image: url('../../../../public/assets/img/soc_med_mail_hover.svg');
+}
+
+.arrow {
+  background-image: url('../../../../public/assets/img/arrow_down.svg');
+  width: 40px; 
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.4s;
+}
+
+.arrow:hover {
+  background-image: url('../../../../public/assets/img/arrow_down_hover.svg');
 }

@@ -5,13 +5,20 @@ import { MyProjects } from './my-projects/my-projects';
 import { Colleagues } from './colleagues/colleagues';
 import { ContactMe } from './contact-me/contact-me';
 import { AboveTheFold } from './above-the-fold/above-the-fold';
-import { NavBar } from '../shared/nav-bar/nav-bar';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [AboveTheFold, WhyMe, MySkills, MyProjects, Colleagues, ContactMe, NavBar],
+  imports: [AboveTheFold, WhyMe, MySkills, MyProjects, Colleagues, ContactMe],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
 })
 export class LandingPage {
+  scrollTo(section: string) {
+    const target = document.getElementById(section);
+
+  if (target) {
+    const y = target.getBoundingClientRect().top + window.scrollY - 100;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
 }

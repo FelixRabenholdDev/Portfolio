@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { NavBar } from '../../shared/nav-bar/nav-bar';
 
 @Component({
@@ -7,6 +7,5 @@ import { NavBar } from '../../shared/nav-bar/nav-bar';
   templateUrl: './above-the-fold.html',
   styleUrl: './above-the-fold.scss',
 })
-export class AboveTheFold {
-
+export class AboveTheFold { 
 }
