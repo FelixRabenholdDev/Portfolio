@@ -1,57 +1,93 @@
 @import '../../../styles.scss';
 
 .projects {
-  padding: 50px;
+  padding: 60px 80px;
   color: $font-color;
+  background: #0a3a3c; // optional falls Hintergrund nötig ist
 
   .title {
     text-align: center;
     font-size: 48px;
-    margin-bottom: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    color: #f7e6b4;
   }
 
+  /* --------------------------- */
+  /*           TABS              */
+  /* --------------------------- */
   .tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
-    gap: 40px;
+    gap: 28px;
+    margin-bottom: 50px;
 
     button {
-      background: none;
-      border: none;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 14px 32px;
+      border-radius: 30px;
+      border: 2px solid transparent;
       color: #f7e6b4;
-      font-size: 24px;
+      font-size: 20px;
       cursor: pointer;
-      opacity: 0.6;
-      transition: 0.2s;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
 
       &.active {
         opacity: 1;
-        border-bottom: 3px solid #f7e6b4;
-      }
-      &:hover {
-        opacity: 1;
+        background: #0c2f30;
+        border-color: #f7e6b4;
+        box-shadow: 0 0 12px rgba(247, 230, 180, 0.35);
       }
     }
   }
 
+  /* --------------------------- */
+  /*    CONTENT + IMAGE WRAP     */
+  /* --------------------------- */
   .content-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
+    align-items: flex-start;
 
     .content {
       flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 25px;
+      backdrop-filter: blur(6px);
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.07);
+      transition: all 0.3s ease;
+
+      h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #f7e6b4;
+      }
 
       .section {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         h4 {
-          margin-bottom: 10px;
           font-size: 22px;
+          margin-bottom: 8px;
+          color: #f7e6b4;
+        }
+
+        p {
+          font-size: 17px;
+          opacity: 0.85;
+          line-height: 1.6;
         }
       }
 
+      /* Buttons */
       .buttons {
         margin-top: 20px;
         display: flex;
@@ -60,19 +96,23 @@
         .btn {
           background: #eec36c;
           color: #0f3b3d;
-          padding: 12px 24px;
-          border-radius: 20px;
+          padding: 14px 28px;
+          border-radius: 22px;
           text-decoration: none;
           font-weight: bold;
-          transition: 0.2s;
+          font-size: 16px;
+          transition: all 0.25s ease;
 
           &:hover {
             background: #ffd98a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255, 217, 138, 0.3);
           }
         }
       }
     }
 
+    /* IMAGE AREA */
     .image-area {
       flex: 1;
       display: flex;
@@ -80,9 +120,44 @@
 
       img {
         width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
       }
+    }
+  }
+
+  /* --------------------------- */
+  /*         RESPONSIVE          */
+  /* --------------------------- */
+
+  @media (max-width: 1100px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+
+      .image-area {
+        width: 80%;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .tabs button {
+      font-size: 18px;
+      padding: 10px 26px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+
+    .content-wrapper {
+      gap: 30px;
+    }
+
+    .content {
+      padding: 25px !important;
     }
   }
 }
