@@ -16,5 +16,5 @@ export class App {
 
   onScrollPositionChange(scrollTop: number) {
     this.isSticky = scrollTop > 0;
-  }
+  }  
 }
