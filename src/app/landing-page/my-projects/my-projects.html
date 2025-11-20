@@ -1,1 +1,43 @@
-<h2>My Projects</h2>
+<section class="projects">
+  <h2 class="title">My Projects</h2>
+
+  <div class="tabs">
+    <button 
+      *ngFor="let tab of tabs; let i = index"
+      (click)="selectedTab = i"
+      [class.active]="selectedTab === i">
+      {{ tab }}
+    </button>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content">
+      <h3>{{ projectData[selectedTab].title }}</h3>
+
+      <div class="section">
+        <h4>About the project</h4>
+        <p><strong>Duration:</strong> {{ projectData[selectedTab].duration }}</p>
+        <p>{{ projectData[selectedTab].about }}</p>
+      </div>
+
+      <div class="section">
+        <h4>How I have organised my work process</h4>
+        <p>{{ projectData[selectedTab].workProcess }}</p>
+      </div>
+
+      <div class="section">
+        <h4>My group work experience</h4>
+        <p>{{ projectData[selectedTab].group }}</p>
+      </div>
+
+      <div class="buttons">
+        <a [href]="projectData[selectedTab].live" target="_blank" class="btn">Live Test</a>
+        <a [href]="projectData[selectedTab].github" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+    <div class="image-area">
+      <img src="assets/dabubble.png" alt="Project preview" />
+    </div>
+  </div>
+</section>
