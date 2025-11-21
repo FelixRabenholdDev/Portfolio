@@ -4,6 +4,12 @@
   padding: 90px 140px;
   position: relative;
 
+  .arrow {
+    position: absolute;
+    right: 80px;
+    top: 120px;
+  }
+
   @media (max-width: 950px) {
     padding: 60px 20px;
   }
