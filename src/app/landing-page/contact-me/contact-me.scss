@@ -1,1 +1,155 @@
 @import '../../../styles.scss';
+
+.contact {
+  padding: 90px 140px;
+  position: relative;
+
+  @media (max-width: 950px) {
+    padding: 60px 20px;
+  }
+
+  .intro-wrapper {
+    max-width: 1100px;
+    margin: 0 auto 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+
+    @media (max-width: 950px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  .intro-text {
+    flex: 1;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  .contact-details {
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 17px;
+
+    .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        &.mail {
+          background-image: url('/assets/icons/mail.svg');
+        }
+
+        &.phone {
+          background-image: url('/assets/icons/phone.svg');
+        }
+      }
+    }
+  }
+
+  .form {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    .row {
+      display: flex;
+      gap: 40px;
+
+      @media (max-width: 950px) {
+        flex-direction: column;
+      }
+    }
+
+    .field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      label {
+        font-size: 14px;
+        color: $pr-color;
+      }
+
+      input,
+      textarea {
+        background: transparent;
+        border: 2px solid $pr-color;
+        color: $font-color;
+        padding: 14px 20px;
+        border-radius: 40px;
+        font-size: 16px;
+        outline: none;
+        font-family: 'josefin', sans-serif;
+
+        &:focus {
+          border-color: $pr-color;
+        }
+      }
+
+      textarea {
+        height: 160px;
+        border-radius: 25px;
+        resize: none;
+      }
+    }
+
+    .privacy {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+
+      a {
+        color: $pr-color;
+        text-decoration: none;
+      }
+    }
+
+    .send-btn {
+      width: 120px;
+      padding: 12px 0;
+      border: 2px solid $pr-color;
+      color: $pr-color;
+      border-radius: 30px;
+      font-size: 17px;
+      transition: 0.3s;
+
+      &:hover {
+        background: $pr-color;
+        color: $bg-color;
+      }
+    }
+    .send-wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .arrow {
+    background-image: url('../../../../public/assets/img/arrow_up.svg');
+    width: 40px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.4s;
+  }
+
+  .arrow:hover {
+    background-image: url('../../../../public/assets/img/arrow_up_hover.svg');
+  }
+}

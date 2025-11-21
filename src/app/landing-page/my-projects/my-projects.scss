@@ -3,19 +3,7 @@
 .projects {
   padding: 60px 80px;
   color: $font-color;
-  background: #0a3a3c; // optional falls Hintergrund nötig ist
 
-  .title {
-    text-align: center;
-    font-size: 48px;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-    color: #f7e6b4;
-  }
-
-  /* --------------------------- */
-  /*           TABS              */
-  /* --------------------------- */
   .tabs {
     display: flex;
     justify-content: center;
