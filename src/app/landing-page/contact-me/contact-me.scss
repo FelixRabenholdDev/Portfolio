@@ -34,12 +34,22 @@
     font-size: 16px;
   }
 
+  .contact-link {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .contact-link:hover {
+    color: $pr-color;
+  }
+
   .contact-details {
     flex: 0 0 320px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    font-size: 17px;
+    font-size: 17px; 
 
     .detail-item {
       display: flex;
@@ -54,12 +64,12 @@
         background-position: center;
 
         &.mail {
-          background-image: url('/assets/icons/mail.svg');
+          background-image: url('../../../../public/assets/img/icon_email.svg');
         }
 
         &.phone {
-          background-image: url('/assets/icons/phone.svg');
-        }
+          background-image: url('../../../../public/assets/img/icon_phone.svg');
+        }        
       }
     }
   }
