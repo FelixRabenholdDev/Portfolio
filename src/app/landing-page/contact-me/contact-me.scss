@@ -56,20 +56,32 @@
       align-items: center;
       gap: 12px;
 
-      .icon {
-        width: 20px;
-        height: 20px;
+      .mail {
+        height: 40px;
+        width: 400px;
+        background-image: url('../../../../public/assets/img/mail.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;
+        background-position: center;    
+      }
 
-        &.mail {
-          background-image: url('../../../../public/assets/img/icon_email.svg');
-        }
+      .mail:hover {
+        background-image: url('../../../../public/assets/img/mail_hover.svg');
+        cursor: pointer;
+      }
 
-        &.phone {
-          background-image: url('../../../../public/assets/img/icon_phone.svg');
-        }        
+      .phone {
+        height: 40px;
+        width: 400px;
+        background-image: url('../../../../public/assets/img/phone.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;    
+      }
+
+      .phone:hover {
+        background-image: url('../../../../public/assets/img/phone_hover.svg');
+        cursor: pointer;
       }
     }
   }
