@@ -37,7 +37,7 @@
   .contact-link {
     color: inherit;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.2s;    
   }
 
   .contact-link:hover {
@@ -116,7 +116,7 @@
       input,
       textarea {
         background: transparent;
-        border: 2px solid $pr-color;
+        border: 1.5px solid $pr-color;
         color: $font-color;
         padding: 14px 20px;
         border-radius: 40px;
@@ -151,7 +151,7 @@
     .send-btn {
       width: 120px;
       padding: 12px 0;
-      border: 2px solid $pr-color;
+      border: 1.5px solid $pr-color;
       color: $pr-color;
       border-radius: 30px;
       font-size: 17px;

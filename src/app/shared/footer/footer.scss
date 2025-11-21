@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+
+.footer {
+  width: 100%;
+  background: $pr-color;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $bg-color;
+  font-family: 'josefin';
+  font-weight: 600;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-left {
+    line-height: 24px;
+  }
+
+  .legal-link:hover {
+    color: $font-color;
+  }
+
+  .footer-logo {
+    height: 100px;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon[data-icon="github"] {
+  background-image: url('../../../../public/assets/img/soc_med_footer_git.svg');
+
+  &:hover { background-image: url('../../../../public/assets/img/soc_med_footer_git_hover.svg'); }
+}
+
+.icon[data-icon="mail"] {
+  background-image: url('../../../../public/assets/img/soc_med_footer_mail.svg');
+
+  &:hover { background-image: url('../../../../public/assets/img/soc_med_footer_mail_hover.svg'); }
+}
+
+.icon[data-icon="linkedin"] {
+  background-image: url('../../../../public/assets/img/soc_med_footer_linked.svg');
+
+  &:hover { background-image: url('../../../../public/assets/img/soc_med_footer_linked_hover.svg'); }
+}
+
+@media (max-width: 480px) {
+  .icon { width: 22px; height: 22px; }
+}
