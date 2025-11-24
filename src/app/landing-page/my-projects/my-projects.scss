@@ -7,15 +7,11 @@
   .tabs {
     display: flex;
     justify-content: center;
-    gap: 28px;
-    margin-bottom: 50px;
+    gap: 28px;  
 
     button {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 14px 32px;
-      border-radius: 30px;
-      border: 2px solid transparent;
-      color: #f7e6b4;
+      padding: 14px 32px;      
+      color: $pr-color;
       font-size: 20px;
       cursor: pointer;
       opacity: 0.7;
@@ -29,8 +25,10 @@
       &.active {
         opacity: 1;
         background: #0c2f30;
-        border-color: #f7e6b4;
-        box-shadow: 0 0 12px rgba(247, 230, 180, 0.35);
+        border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      padding-top: 25px;
+      padding-bottom: 25px;
       }
     }
   }
