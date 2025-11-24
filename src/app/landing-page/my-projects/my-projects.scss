@@ -1,34 +1,33 @@
 @import '../../../styles.scss';
 
 .projects {
-  padding: 60px 80px;
+  padding: 60px 0px;
   color: $font-color;
 
   .tabs {
     display: flex;
     justify-content: center;
-    gap: 28px;  
+    gap: 28px;
 
     button {
-      padding: 14px 32px;      
+      padding: 14px 32px;
       color: $pr-color;
-      font-size: 20px;
+      font-size: 32px;
       cursor: pointer;
-      opacity: 0.7;
       transition: all 0.3s ease;
+      font-family: 'josefin', sans-serif;
 
       &:hover {
-        opacity: 1;
-        transform: translateY(-2px);
+        color: $se-color;
       }
 
       &.active {
         opacity: 1;
-        background: #0c2f30;
+        background: $pr-color2;
         border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-      padding-top: 25px;
-      padding-bottom: 25px;
+        border-top-right-radius: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
     }
   }
@@ -36,23 +35,14 @@
   .content-wrapper {
     display: flex;
     justify-content: space-between;
+    background: $pr-color2;
     gap: 60px;
     align-items: flex-start;
 
     .content {
       flex: 1;
-      background: rgba(255, 255, 255, 0.05);
       padding: 40px;
-      border-radius: 25px;
-      backdrop-filter: blur(6px);
-      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.07);
       transition: all 0.3s ease;
-
-      h3 {
-        font-size: 32px;
-        margin-bottom: 30px;
-        color: #f7e6b4;
-      }
 
       .section {
         margin-bottom: 30px;
@@ -60,7 +50,6 @@
         h4 {
           font-size: 22px;
           margin-bottom: 8px;
-          color: #f7e6b4;
         }
 
         p {
@@ -69,6 +58,14 @@
           line-height: 1.6;
         }
       }
+    }
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
 
       .buttons {
         margin-top: 20px;
@@ -76,33 +73,32 @@
         gap: 20px;
 
         .btn {
-          background: #eec36c;
-          color: #0f3b3d;
+          color: $pr-color;
+          background: $pr-color2;
           padding: 14px 28px;
           border-radius: 22px;
+          border: 1px solid $pr-color;
           text-decoration: none;
-          font-weight: bold;
+          font-weight: 400;
           font-size: 16px;
           transition: all 0.25s ease;
 
           &:hover {
-            background: #ffd98a;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(255, 217, 138, 0.3);
+            background: $pr-color;
+            color: $bg-color;
           }
         }
       }
-    }
 
-    .image-area {
-      flex: 1;
-      display: flex;
-      justify-content: center;
+      .image-area {
+        flex: 1;
+        display: flex;
+        justify-content: center;
 
-      img {
-        width: 100%;
-        border-radius: 25px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+        img {
+          width: 100%;
+          border-radius: 25px;
+        }
       }
     }
   }
