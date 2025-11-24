@@ -37,7 +37,7 @@
   .contact-link {
     color: inherit;
     text-decoration: none;
-    transition: 0.2s;    
+    transition: 0.2s;
   }
 
   .contact-link:hover {
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    font-size: 17px; 
+    font-size: 17px;
 
     .detail-item {
       display: flex;
@@ -62,7 +62,7 @@
         background-image: url('../../../../public/assets/img/mail.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;    
+        background-position: center;
       }
 
       .mail:hover {
@@ -76,7 +76,7 @@
         background-image: url('../../../../public/assets/img/phone.svg');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: center;    
+        background-position: center;
       }
 
       .phone:hover {
@@ -107,6 +107,7 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
+      position: relative;
 
       label {
         font-size: 14px;
@@ -115,7 +116,8 @@
 
       input,
       textarea {
-        background: transparent;
+        background: $bg-color;
+        transition: background 0.25s ease, border-color 0.25s ease;
         border: 1.5px solid $pr-color;
         color: $font-color;
         padding: 14px 20px;
@@ -126,7 +128,17 @@
 
         &:focus {
           border-color: $pr-color;
+          background: rgba(255, 255, 255, 0.16);
         }
+      }
+
+      input.valid,
+      textarea.valid {
+        border-color: $pr-color;
+        background-image: url('../../../../public/assets/img/check.svg');
+        background-repeat: no-repeat;
+        background-position: right 18px center;
+        background-size: 18px;
       }
 
       textarea {
@@ -179,5 +191,35 @@
 
   .arrow:hover {
     background-image: url('../../../../public/assets/img/arrow_up_hover.svg');
+  }
+}
+
+.field {
+  label.error {
+    color: red !important;
+  }
+
+  input.error,
+  textarea.error {
+    border-color: red !important;
+  }
+}
+
+.privacy-error {
+  color: red;
+  font-size: 14px;
+  margin-top: -30px;
+  margin-left: 28px;
+}
+
+.send-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: gray;
+  color: gray;
+
+  &:hover {
+    background: none;
+    color: gray;
   }
 }
