@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-contact-me',
   imports: [FormsModule, CommonModule],
   templateUrl: './contact-me.html',
-  styleUrl: './contact-me.scss',
+  styleUrl: './contact-me.scss',  
 })
 export class ContactMe {
   name = '';
@@ -20,20 +20,27 @@ export class ContactMe {
 
   send() {
     this.nameError = !this.isValid(this.name);
-    this.emailError = !this.isValid(this.email);
     this.messageError = !this.isValid(this.message);
+
+    this.emailError = !this.isEmailValid(this.email);
 
     if (!this.privacyAccepted) {
       this.privacyError = true;
-      return;
     }
 
-    if (this.nameError || this.emailError || this.messageError || this.privacyError) return;
+    if (this.nameError || this.emailError || this.messageError || this.privacyError) {
+      return;
+    }
 
     this.privacyError = false;
   }
 
   isValid(value: string) {
     return value.trim().length > 0;
+  }
+
+  isEmailValid(email: string) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email.trim());
   }
 }

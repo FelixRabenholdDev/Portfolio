@@ -41,7 +41,7 @@
           name="email"
           [(ngModel)]="email"
           [class.error]="emailError"
-          [class.valid]="!emailError && isValid(email)"
+          [class.valid]="!emailError && isEmailValid(email)"
           (input)="emailError = false"
         />
       </div>
