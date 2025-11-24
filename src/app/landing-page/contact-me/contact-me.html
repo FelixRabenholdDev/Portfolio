@@ -29,6 +29,7 @@
           name="name"
           [(ngModel)]="name"
           [class.error]="nameError"
+          [class.valid]="!nameError && isValid(name)"
           (input)="nameError = false"
         />
       </div>
@@ -40,6 +41,7 @@
           name="email"
           [(ngModel)]="email"
           [class.error]="emailError"
+          [class.valid]="!emailError && isValid(email)"
           (input)="emailError = false"
         />
       </div>
@@ -51,6 +53,7 @@
         name="message"
         [(ngModel)]="message"
         [class.error]="messageError"
+        [class.valid]="!messageError && isValid(message)"
         (input)="messageError = false"
       ></textarea>
     </div>
