@@ -58,19 +58,17 @@
       ></textarea>
     </div>
 
-    <div class="privacy">
-      <input
-        type="checkbox"
-        id="privacy"
-        name="privacy"
-        [(ngModel)]="privacyAccepted"
-        (change)="privacyError = false"
-      />
-      <label for="privacy">
-        I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-        outlined.
-      </label>
-    </div>
+    <label class="privacy-row">
+      <span class="checkbox-box">
+        <input type="checkbox" name="privacyAccepted"
+        class="real-checkbox" [(ngModel)]="privacyAccepted" aria-checked="{{ privacyAccepted }}" />
+        <span class="custom-checkbox" [class.checked]="privacyAccepted" aria-hidden="true"></span>
+      </span>
+
+      <span class="privacy-text">
+        I've read the <a href="#">privacy policy</a> and agree to the processing.
+      </span>
+    </label>
 
     <p class="privacy-error" *ngIf="privacyError">Please accept the privacy policy</p>
 

@@ -223,3 +223,61 @@
     color: gray;
   }
 }
+
+.privacy-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.real-checkbox {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('/assets/img/check_box.svg');
+  transition: background-image 0.18s ease, transform 0.12s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.checkbox-box:hover .custom-checkbox {
+  background-image: url('/assets/img/check_box_hover.svg');
+  transform: scale(1.02);
+}
+
+.custom-checkbox.checked {
+  background-image: url('/assets/img/check_box_checked.svg');
+  transform: scale(1);
+}
+
+.privacy-text {
+  font-size: 14px;
+  a {
+    color: $pr-color;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
