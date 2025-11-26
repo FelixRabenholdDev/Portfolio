@@ -38,6 +38,8 @@ export class ContactMe {
   };
 
   send(ngForm: NgForm) {
+    console.log('Form data:', this.contactData);
+    
     this.nameError = !this.isValid(this.contactData.name);
     this.messageError = !this.isValid(this.contactData.message);
 
@@ -57,7 +59,6 @@ export class ContactMe {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -71,7 +72,7 @@ export class ContactMe {
     }
   }
 
-  isValid(value: string) {
+  isValid(value: string) {    
     return value.trim().length > 0;
   }
 
