@@ -16,7 +16,6 @@
     flex-wrap: wrap;
   }
 
-  /* LEFT GRID */
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 120px);
@@ -40,12 +39,11 @@
     }
   }
 
-  /* RIGHT CIRCLE AREA */
   &__learning {
     width: 380px;
     height: 380px;
     background-image: url('../../../../public/assets/img/skill_shape.svg');
-    padding: 60px 40px;
+    padding: 40px 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -92,7 +90,6 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .skills__grid {
     grid-template-columns: repeat(3, 120px);
