@@ -144,12 +144,23 @@
     margin: 0 10px;
   }
 
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
   .arrow {
     width: 30px;
     height: 75px;
   }
 
-  .logo {
-    margin: 0;
+  .undertitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    font-size: 36px;
   }
 }
