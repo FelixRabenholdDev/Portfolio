@@ -9,7 +9,7 @@
   height: 720px;
   background-image: url('../../../../public/assets/img/shape.svg');
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 }
 
 .undertitle {
@@ -47,7 +47,7 @@
 }
 
 .icon {
-  width: 30px; 
+  width: 30px;
   height: 30px;
   padding: 0;
   border: none;
@@ -79,7 +79,7 @@
 
 .arrow {
   background-image: url('../../../../public/assets/img/arrow_down.svg');
-  width: 40px; 
+  width: 40px;
   height: 90px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,4 +88,68 @@
 
 .arrow:hover {
   background-image: url('../../../../public/assets/img/arrow_down_hover.svg');
+}
+
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  .undertitle {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portrait {
+    width: 500px;
+    height: 520px;
+  }
+
+  .undertitle {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flex_center {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .portrait {
+    width: 300px;
+    height: 320px;
+    margin-bottom: 40px;
+  }
+
+  .logo_and_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social_media_buttons {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .social_media_buttons button {
+    margin: 0 10px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 75px;
+  }
+
+  .logo {
+    margin: 0;
+  }
 }
