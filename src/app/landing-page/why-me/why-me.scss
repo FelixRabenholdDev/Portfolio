@@ -29,6 +29,7 @@
 
   @media (max-width: 900px) {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 }
@@ -58,6 +59,10 @@
   background-color: transparent;  
   align-self: flex-end;
   background-image: url('../../../../public/assets/img/lets_talk.svg');
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 
 .lets_talk_button:hover {
