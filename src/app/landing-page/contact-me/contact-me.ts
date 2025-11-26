@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-me',
@@ -9,20 +10,38 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact-me.scss',  
 })
 export class ContactMe {
-  name = '';
-  email = '';
-  message = '';
+
+  http = inject(HttpClient);
+
+  contactData = {
+    name: '',
+    email: '',
+    message: ''
+  };
+
   nameError = false;
   emailError = false;
   messageError = false;
   privacyAccepted = false;
   privacyError = false;
+  mailTest = true;
 
-  send() {
-    this.nameError = !this.isValid(this.name);
-    this.messageError = !this.isValid(this.message);
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
 
-    this.emailError = !this.isEmailValid(this.email);
+  send(ngForm: NgForm) {
+    this.nameError = !this.isValid(this.contactData.name);
+    this.messageError = !this.isValid(this.contactData.message);
+
+    this.emailError = !this.isEmailValid(this.contactData.email);
 
     if (!this.privacyAccepted) {
       this.privacyError = true;
@@ -33,6 +52,23 @@ export class ContactMe {
     }
 
     this.privacyError = false;
+
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+    }
   }
 
   isValid(value: string) {

@@ -20,16 +20,16 @@
     </div>
   </div>
 
-  <form class="form" (submit)="send(); $event.preventDefault()">
+  <form class="form" (submit)="send(contactForm); $event.preventDefault()" #contactForm="ngForm">
     <div class="row">
       <div class="field">
         <label [class.error]="nameError">Your name</label>
         <input
           type="text"
           name="name"
-          [(ngModel)]="name"
+          [(ngModel)]="contactData.name"
           [class.error]="nameError"
-          [class.valid]="!nameError && isValid(name)"
+          [class.valid]="!nameError && isValid(contactData.name)"
           (input)="nameError = false"
         />
       </div>
@@ -39,9 +39,9 @@
         <input
           type="email"
           name="email"
-          [(ngModel)]="email"
+          [(ngModel)]="contactData.email"
           [class.error]="emailError"
-          [class.valid]="!emailError && isEmailValid(email)"
+          [class.valid]="!emailError && isEmailValid(contactData.email)"
           (input)="emailError = false"
         />
       </div>
@@ -51,9 +51,9 @@
       <label [class.error]="messageError">Your Message</label>
       <textarea
         name="message"
-        [(ngModel)]="message"
+        [(ngModel)]="contactData.message"
         [class.error]="messageError"
-        [class.valid]="!messageError && isValid(message)"
+        [class.valid]="!messageError && isValid(contactData.message)"
         (input)="messageError = false"
       ></textarea>
     </div>
@@ -61,8 +61,8 @@
     <label class="privacy-row">
       <span class="checkbox-box">
         <input type="checkbox" name="privacyAccepted"
-        class="real-checkbox" [(ngModel)]="privacyAccepted" aria-checked="{{ privacyAccepted }}" />
-        <span class="custom-checkbox" [class.checked]="privacyAccepted" aria-hidden="true"></span>
+        class="real-checkbox" [(ngModel)]="privacyAccepted"/>
+        <span class="custom-checkbox" [class.checked]="privacyAccepted"></span>
       </span>
 
       <span class="privacy-text">
