@@ -21,8 +21,13 @@
 
 .nav-links {
   display: flex;
-  list-style: none;
-  gap: 60px;
+  list-style: none;  
+  gap: 100px;
+  transition: transform .3s ease-in-out;
+
+  @media (max-width: 1100px) {
+    gap: 40px;
+  }
 }
 
 .nav-links a {
@@ -81,11 +86,6 @@
   }
 }
 
-.nav-links {
-  display: flex;
-  gap: 24px;
-  transition: transform .3s ease-in-out;
-}
 
 /* ===================== */
 /* ANIMATION VARIANTE B  */
