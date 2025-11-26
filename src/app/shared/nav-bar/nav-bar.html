@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
 
   <div class="logo-wrapper">
     <img src="assets/img/logo2.png" alt="Developer Logo 2" class="logo" />
@@ -15,4 +15,30 @@
     <span class="lang">DE</span>
     <span class="lang active">EN</span>
   </div>
+</nav> -->
+
+<nav class="navbar">
+
+  <div class="logo-wrapper">
+    <img src="assets/img/logo2.png" alt="Developer Logo 2" class="logo" />
+  </div>
+
+  <!-- BURGER for mobile -->
+  <button class="burger" (click)="toggleMenu()">
+    <img #burgerIcon src="assets/img/burger_menu_t0.svg" alt="menu" />
+  </button>
+
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a href="#why" (click)="closeMenu()">Why me</a></li>
+    <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+    <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+    <li><a href="#contact" class="contact-link" (click)="closeMenu()">Contact</a></li>
+  </ul>
+
+  <div class="language-switch">
+    <span class="lang">DE</span>
+    <span class="lang active">EN</span>
+  </div>
+
 </nav>
+

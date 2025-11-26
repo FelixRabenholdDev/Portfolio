@@ -59,3 +59,70 @@
   opacity: 1;
   border-bottom: 2px solid $nav-font-color;
 }
+
+/* === DESKTOP BLEIBT UNVERÄNDERT === */
+
+/* Der Header soll immer oben kleben */
+
+/* Burger initially hidden */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.nav-links {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 8px 16px !important;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+    z-index: 1200;
+  }
+
+  .language-switch {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 75%;
+    height: calc(100vh - 56px);
+    background: rgba(0, 0, 0, 0.95);
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    transform: translateX(100%);
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+}
