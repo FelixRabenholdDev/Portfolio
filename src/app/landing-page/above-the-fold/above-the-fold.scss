@@ -10,6 +10,11 @@
   background-image: url('../../../../public/assets/img/shape.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  transition: background-image 0.5s ease;
+}
+
+.portrait:hover {
+  background-image: url('../../../../public/assets/img/shape_hover.svg');
 }
 
 .undertitle {
