@@ -12,7 +12,6 @@
   &__content {
     display: flex;
     justify-content: center;
-    gap: 80px;
     flex-wrap: wrap;
   }
 
@@ -41,8 +40,9 @@
 
   &__learning {
     width: 380px;
-    height: 380px;
     background-image: url('../../../../public/assets/img/skill_shape.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 40px 40px;
     text-align: center;
     display: flex;
@@ -68,7 +68,7 @@
         align-items: center;
 
         img {
-          width: 38px;
+          width: 50px;
         }
       }
     }
@@ -82,6 +82,17 @@
 
   &__learning:hover {
     background-image: url('../../../../public/assets/img/skill_shape_hover.svg');
+  }
+}
+
+@media (max-width: 1100px) {
+  .skills__grid {
+    grid-template-columns: repeat(4, 95px);
+    gap: 15px;
+  }
+
+  .skills__learning {
+    padding-left: 0;
   }
 }
 
@@ -112,7 +123,7 @@
     .learning-row {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: flex-start;
       width: 100%;
       gap: 20px;
@@ -124,18 +135,32 @@
     }
 
     .learning-icons {
-      display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      align-items: center;
-      height: 100px;
+      height: 140px;
+      padding: 0 20px;
+      width: auto;
+      gap: 10px;
       background-image: url('../../../../public/assets/img/skill_shape.svg');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+    }
+  }
 
-      img {
-        object-fit: cover;
-      }
+  .lets_talk_button {
+    display: inline-block; 
+    width: 150px;
+    height: 55px;
+    padding: 0;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    align-self: flex-end;
+    background-image: url('../../../../public/assets/img/lets_talk.svg');
+
+    &:hover {
+      background-image: url('../../../../public/assets/img/lets_talk_hover.svg');
     }
   }
 }

@@ -75,3 +75,17 @@ app-nav-bar {
   top: 0;
   z-index: 1000;
 }
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 70px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}
