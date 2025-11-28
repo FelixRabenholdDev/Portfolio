@@ -25,7 +25,8 @@ export class MyProjects {
     {
       title: 'DA Bubble',
       duration: '3 weeks',
-      about: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+      about: `This App is a Slack Clone App. 
+      It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
       workProcess: 'Modularized components, clean naming, and extensive documentation.',
       group: 'Worked in a team of 4, I implemented the chat and UI logic.',
       live: '#',
@@ -50,6 +51,7 @@ export class MyProjects {
         { name: 'JavaScript', icon: 'assets/img/JavaScript_project.svg' },
         { name: 'CSS', icon: 'assets/img/CSS_project.svg' },
       ],
+      image: 'assets/img/Shroomie.jpg',
     },
     {
       title: 'Join',
@@ -64,6 +66,7 @@ export class MyProjects {
         { name: 'TypeScript', icon: 'assets/img/TypeScript_project.svg' },
         { name: 'Firebase', icon: 'assets/img/Firebase_project.svg' },
       ],
+      image: 'assets/img/Join.jpg',
     },
     {
       title: 'Ongoing Project',
@@ -81,6 +84,7 @@ export class MyProjects {
         { name: 'JavaScript', icon: 'assets/img/JavaScript_project.svg' },
         { name: 'CSS', icon: 'assets/img/CSS_project.svg' },
       ],
+      image: 'assets/img/Coming_soon.jpg',
     },
   ];
 
