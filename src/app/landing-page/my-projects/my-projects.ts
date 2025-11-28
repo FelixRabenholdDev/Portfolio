@@ -60,7 +60,6 @@ export class MyProjects {
     }
   ];
 
-  // optional: helper to set tab (kann später nützlich sein)
   selectTab(index: number) {
     this.selectedTab = index;
   }
