@@ -53,7 +53,7 @@
         }
 
         p {
-          font-size: 17px;
+          font-size: 18px;
           opacity: 0.85;
           line-height: 1.6;
         }
@@ -66,6 +66,27 @@
       justify-content: center;
       flex-direction: column;
       padding: 40px;
+
+      .technologies {
+        width: 100%;
+        
+        p {
+          margin-bottom: 16px;
+          font-size: 17px;
+          text-align: center;          
+        }
+
+        .tech-icons {
+          display: flex;
+          justify-content: space-evenly;          
+
+          img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+          }
+        }
+      }
 
       .buttons {
         margin-top: 20px;
@@ -113,13 +134,17 @@
         width: 80%;
       }
     }
+
+    .technologies {
+      display: none;      
+    }
   }
 
   @media (max-width: 850px) {
     .tabs button {
       font-size: 18px;
       padding: 10px 26px;
-    }
+    }   
   }
 
   @media (max-width: 600px) {
