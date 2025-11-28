@@ -8,7 +8,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 28px;
-    padding-left: 40px;
+    padding: 0 80px;
 
     button {
       padding: 36px 32px;
@@ -39,7 +39,7 @@
     background: $pr-color2;
     gap: 20px;
     align-items: flex-start;
-    padding: 0 50px;
+    padding: 0 80px;
 
     .content {
       flex: 1;      
@@ -83,7 +83,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      padding: 25px 40px 50px 0;
+      padding: 40px 0;
 
       .technologies {
         width: 100%;
@@ -160,7 +160,7 @@
     }
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     .tabs button {
       font-size: 18px;
       padding: 10px 26px;

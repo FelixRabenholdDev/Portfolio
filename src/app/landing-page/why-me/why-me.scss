@@ -1,31 +1,30 @@
 @import '../../../styles.scss';
 
 .why_me {
-  padding: 60px 40px 0;
-  text-align: center;
+  padding: 60px 200px 0;
+  text-align: left;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    padding: 40px 20px 0;
+  }
 }
 
 .wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
+  // max-width: 1440px;
+  // margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 60px;
-}
-
-.flex_center {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .top_row {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
   align-items: flex-start;
+  gap: 60px;
+  height: auto;
 
   @media (max-width: 900px) {
     flex-direction: column;
@@ -34,8 +33,15 @@
   }
 }
 
+.flex_center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 400px;
+}
+
 .location_text {
-  font-size: 32px;
+  font-size: 30px;
 
   .highlight {
     color: $pr-color;
@@ -44,8 +50,8 @@
 }
 
 .why_me_text {
-  max-width: 500px;
-  font-size: 20px;
+  max-width: 300px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
