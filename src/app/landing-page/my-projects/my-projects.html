@@ -12,22 +12,22 @@
   </div>
 
   <div class="content-wrapper" [@fadeAnimation]="selectedTab">
-    <div class="content">
-      <div class="section">
+    <ul class="content">
+      <li class="section">
         <h4>About the project <span>Duration: {{ projectData[selectedTab].duration }}</span></h4>
         <p>{{ projectData[selectedTab].about }}</p>
-      </div>
+      </li>
 
-      <div class="section">
+      <li class="section">
         <h4>How I have organised my work process</h4>
         <p>{{ projectData[selectedTab].workProcess }}</p>
-      </div>
+      </li>
 
-      <div class="section">
+      <li class="section">
         <h4>My group work experience</h4>
         <p>{{ projectData[selectedTab].group }}</p>
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <div class="image-wrapper">
       <div class="technologies">

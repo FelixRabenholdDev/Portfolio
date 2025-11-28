@@ -6,8 +6,9 @@
 
   .tabs {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 28px;
+    padding-left: 40px;
 
     button {
       padding: 36px 32px;
@@ -36,20 +37,26 @@
     display: flex;
     justify-content: space-evenly;
     background: $pr-color2;
-    gap: 60px;
+    gap: 20px;
     align-items: flex-start;
+    padding: 0 50px;
 
     .content {
-      flex: 1;
-      padding: 40px;
+      flex: 1;      
       transition: all 0.3s ease;
+      list-style-image: url('../../../../public/assets/img/listing_elipse.svg');
+
+      li {
+        padding-left: 10px;        
+      }
 
       .section {
         margin-bottom: 30px;
 
         h4 {
-          font-size: 22px;
+          font-size: 28px;
           margin-bottom: 8px;
+          font-weight: 400;
 
           span {
             font-size: 18px;
@@ -72,7 +79,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      padding: 40px;
+      padding: 25px 40px 50px 0;
 
       .technologies {
         width: 100%;
@@ -85,7 +92,8 @@
 
         .tech-icons {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
+          gap: 25px;
 
           img {
             width: 35px;
@@ -122,10 +130,11 @@
         flex: 1;
         display: flex;
         justify-content: center;
+        padding-top: 20px;
 
         img {
-          width: 500px;
-          border-radius: 25px;
+          width: 450px;
+          border-radius: 35px;
         }
       }
     }
@@ -205,5 +214,6 @@
     .tabs {
       display: flex;
       justify-content: space-between !important;
+      padding: 0 !important; 
     }
   }
