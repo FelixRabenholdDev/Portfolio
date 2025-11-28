@@ -18,14 +18,14 @@ import { trigger, transition, style, animate } from '@angular/animations';
   ],
 })
 export class MyProjects {
-  tabs = ['DA Bubble', 'Sharkie', 'Join', 'Ongoing Project'];
+  tabs = ['1. DA Bubble', '2. Sharkie', '3. Join', '4. Ongoing Project'];
   selectedTab = 0;
 
   projectData = [
     {
       title: 'DA Bubble',
       duration: '3 weeks',
-      about: 'This is a Slack clone with real-time messaging and a clean interface.',
+      about: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
       workProcess: 'Modularized components, clean naming, and extensive documentation.',
       group: 'Worked in a team of 4, I implemented the chat and UI logic.',
       live: '#',
@@ -35,6 +35,7 @@ export class MyProjects {
         { name: 'TypeScript', icon: 'assets/img/TypeScript_project.svg' },
         { name: 'Firebase', icon: 'assets/img/Firebase_project.svg' },
       ],
+      image: 'assets/img/DA_Bubble.jpg',
     },
     {
       title: 'Sharkie',

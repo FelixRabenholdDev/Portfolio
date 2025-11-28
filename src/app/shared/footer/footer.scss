@@ -67,3 +67,10 @@
 @media (max-width: 480px) {
   .icon { width: 22px; height: 22px; }
 }
+
+@media (min-width: 1440px) {
+  .widescreen {
+    padding-left: calc((100% - 1160px) / 2);
+    padding-right: calc((100% - 1160px) / 2);
+  }
+}

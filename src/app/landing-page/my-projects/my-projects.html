@@ -1,4 +1,4 @@
-<section class="projects" id="projects">
+<section class="projects widescreen" id="projects">
   <h2 class="title">My Projects</h2>
 
   <div class="tabs">
@@ -14,8 +14,7 @@
   <div class="content-wrapper" [@fadeAnimation]="selectedTab">
     <div class="content">
       <div class="section">
-        <h4>About the project</h4>
-        <p><strong>Duration:</strong> {{ projectData[selectedTab].duration }}</p>
+        <h4>About the project <span>Duration: {{ projectData[selectedTab].duration }}</span></h4>
         <p>{{ projectData[selectedTab].about }}</p>
       </div>
 
@@ -42,7 +41,10 @@
         </div>
       </div>
       <div class="image-area">
-        <img src="assets/dabubble.png" alt="Project preview" />
+        <img            
+            [src]="projectData[selectedTab].image"
+            [alt]="projectData[selectedTab].title + ' Screenshot'"
+          />
       </div>
 
       <div class="buttons">

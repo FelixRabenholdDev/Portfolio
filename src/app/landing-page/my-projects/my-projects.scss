@@ -34,7 +34,7 @@
 
   .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background: $pr-color2;
     gap: 60px;
     align-items: flex-start;
@@ -50,6 +50,13 @@
         h4 {
           font-size: 22px;
           margin-bottom: 8px;
+
+          span {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 400;
+            padding-left: 20px;
+          }
         }
 
         p {
@@ -69,16 +76,16 @@
 
       .technologies {
         width: 100%;
-        
+
         p {
           margin-bottom: 16px;
           font-size: 17px;
-          text-align: center;          
+          text-align: center;
         }
 
         .tech-icons {
           display: flex;
-          justify-content: space-evenly;          
+          justify-content: space-evenly;
 
           img {
             width: 35px;
@@ -117,7 +124,7 @@
         justify-content: center;
 
         img {
-          width: 100%;
+          width: 500px;
           border-radius: 25px;
         }
       }
@@ -136,7 +143,7 @@
     }
 
     .technologies {
-      display: none;      
+      display: none;
     }
   }
 
@@ -144,7 +151,7 @@
     .tabs button {
       font-size: 18px;
       padding: 10px 26px;
-    }   
+    }
   }
 
   @media (max-width: 600px) {
@@ -182,5 +189,21 @@
         }
       }
     }
-  }
+  }  
 }
+
+@media (min-width: 1440px) {
+    .widescreen {
+      padding-left: calc((100% - 1160px) / 2);
+      padding-right: calc((100% - 1160px) / 2);
+    }
+
+    .content-wrapper {
+      border-radius: 0 0 25px 25px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-between !important;
+    }
+  }
