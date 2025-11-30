@@ -11,9 +11,6 @@
 }
 
 .wrapper {
-  // max-width: 1440px;
-  // margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -34,10 +31,13 @@
 }
 
 .flex_center {
-  display: flex;
-  align-items: center;
   gap: 20px;
   min-width: 400px;
+
+  @media (max-width: 600px) {
+    gap: 0px;
+    min-width: 300px;
+  }
 }
 
 .location_text {
@@ -46,6 +46,14 @@
   .highlight {
     color: $pr-color;
     font-weight: 600;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 18px;
   }
 }
 
@@ -56,13 +64,13 @@
 }
 
 .lets_talk_button {
-  width: 150px; 
+  width: 150px;
   height: 55px;
   padding: 0;
   border: none;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: transparent;  
+  background-color: transparent;
   align-self: flex-end;
   background-image: url('../../../../public/assets/img/lets_talk.svg');
 
