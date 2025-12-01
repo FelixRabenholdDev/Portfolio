@@ -1,7 +1,11 @@
-<nav class="navbar">
+<div class="burger">
   <div class="logo-wrapper">
     <img src="assets/img/logo2.png" alt="Developer Logo 2" class="logo" />
   </div>
+  
+  <button class="burger_btn" (click)="toggleMenu()" #burgerBtn>
+    <img #burgerIcon class="burger-icon" src="assets/img/burger_menu_t0.svg" alt="menu" />
+  </button>
 
   <ul class="nav-links">
     <li><a href="#why">Why me</a></li>
@@ -14,6 +18,4 @@
     <span class="lang">DE</span>
     <span class="lang active">EN</span>
   </div>
-</nav>
-
-
+</div>

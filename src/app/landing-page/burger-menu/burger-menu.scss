@@ -1,0 +1,126 @@
+@import '../../../styles.scss';
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 28px;
+  color: $bg-color;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: $se-color;
+}
+
+.burger {
+    background-color: $pr-color;
+    display: none;
+}
+
+.burger_btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  .burger-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@keyframes burgerOpen {
+  0% {
+    content: url('../../../../public/assets/img/burger_menu_t0.svg');
+  }
+  33% {
+    content: url('../../../../public/assets/img/burger_menu_t1.svg');
+  }
+  66% {
+    content: url('../../../../public/assets/img/burger_menu_t2.svg');
+  }
+  100% {
+    content: url('../../../../public/assets/img/burger_menu_t3.svg');
+  }
+}
+
+@keyframes burgerClose {
+  0% {
+    content: url('../../../../public/assets/img/burger_menu_t3.svg');
+  }
+  33% {
+    content: url('../../../../public/assets/img/burger_menu_t2.svg');
+  }
+  66% {
+    content: url('../../../../public/assets/img/burger_menu_t1.svg');
+  }
+  100% {
+    content: url('../../../../public/assets/img/burger_menu_t0.svg');
+  }
+}
+
+.burger.open .burger-icon {
+  animation: burgerOpen 0.5s steps(4) forwards;
+}
+
+.burger.closing .burger-icon {
+  animation: burgerClose 0.5s steps(4) forwards;
+}
+
+@media (max-width: 900px) {
+  .burger {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger_btn {
+    display: block;
+  }
+
+  .language-switch {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    width: 450px;
+    height: 470px;
+    background-image: url('../../../../public/assets/img/shape.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
