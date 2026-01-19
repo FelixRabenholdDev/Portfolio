@@ -2,6 +2,12 @@
 
 .flex_center {
   height: calc(100vh - 100px);
+  align-items: unset;
+}
+
+.image_wrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
 .portrait {
@@ -15,6 +21,11 @@
 
 .portrait:hover {
   background-image: url('../../../../public/assets/img/shape_hover.svg');
+}
+
+.flex_column {
+  display: flex;
+  justify-content: center;
 }
 
 .undertitle {
@@ -128,6 +139,7 @@
     flex-direction: column;
     height: auto;
     padding-bottom: 0;
+    align-items: center;
   }
 
   .portrait {
