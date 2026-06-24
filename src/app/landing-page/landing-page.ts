@@ -11,7 +11,7 @@ import { BurgerMenu } from './burger-menu/burger-menu';
   selector: 'app-landing-page',
   imports: [AboveTheFold, WhyMe, MySkills, MyProjects, Colleagues, ContactMe, BurgerMenu],
   templateUrl: './landing-page.html',
-  styleUrl: './landing-page.scss',
+  styleUrls: ['./landing-page.scss'],
 })
 export class LandingPage {
 }

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-why-me',
   imports: [],
   templateUrl: './why-me.html',
-  styleUrl: './why-me.scss',
+  styleUrls: ['./why-me.scss'],
 })
 export class WhyMe {
 

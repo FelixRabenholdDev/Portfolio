@@ -48,31 +48,31 @@
 
 @keyframes burgerOpen {
   0% {
-    content: url('../../../../public/assets/img/burger_menu_t0.svg');
+    content: url('/assets/img/burger_menu_t0.svg');
   }
   33% {
-    content: url('../../../../public/assets/img/burger_menu_t1.svg');
+    content: url('/assets/img/burger_menu_t1.svg');
   }
   66% {
-    content: url('../../../../public/assets/img/burger_menu_t2.svg');
+    content: url('/assets/img/burger_menu_t2.svg');
   }
   100% {
-    content: url('../../../../public/assets/img/burger_menu_t3.svg');
+    content: url('/assets/img/burger_menu_t3.svg');
   }
 }
 
 @keyframes burgerClose {
   0% {
-    content: url('../../../../public/assets/img/burger_menu_t3.svg');
+    content: url('/assets/img/burger_menu_t3.svg');
   }
   33% {
-    content: url('../../../../public/assets/img/burger_menu_t2.svg');
+    content: url('/assets/img/burger_menu_t2.svg');
   }
   66% {
-    content: url('../../../../public/assets/img/burger_menu_t1.svg');
+    content: url('/assets/img/burger_menu_t1.svg');
   }
   100% {
-    content: url('../../../../public/assets/img/burger_menu_t0.svg');
+    content: url('/assets/img/burger_menu_t0.svg');
   }
 }
 
@@ -89,10 +89,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 16px 24px;
+    padding: 8px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1100;
   }
 
   .burger_btn {
@@ -105,18 +106,41 @@
 
   .nav-links {
     position: fixed;
-    width: 450px;
-    height: 470px;
-    background-image: url('../../../../public/assets/img/shape.svg');
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(450px, 90vw);
+    max-width: 90vw;
+    height: auto;
+    background-image: url('/assets/img/shape.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 24px;
+    gap: 18px;
+    box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease-in-out;
+    z-index: 1150;
+  }
+
+  .nav-links li {
+    width: 100%;
+    list-style: none;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding: 8px 0;
   }
 
   .nav-links.open {

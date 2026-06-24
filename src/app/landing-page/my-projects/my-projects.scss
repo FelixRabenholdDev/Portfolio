@@ -150,8 +150,12 @@
       align-items: center;
       text-align: left;
 
-      .image-area {
-        width: 80%;
+      .image-wrapper{
+        .image-area {
+          img {
+            width: 90vw;
+          }          
+        }
       }
     }
 

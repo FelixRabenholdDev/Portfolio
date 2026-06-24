@@ -117,42 +117,7 @@
 
 @media (max-width: 900px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .language-switch {
     display: none;
-  }
-
-  .nav-links {
-    position: fixed;
-    width: 450px;
-    height: 470px;
-    background-image: url('../../../../public/assets/img/shape.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.35s ease-in-out;
-  }
-
-  .nav-links.open {
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 

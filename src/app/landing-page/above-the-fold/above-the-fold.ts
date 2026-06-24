@@ -5,7 +5,7 @@ import { NavBar } from '../../shared/nav-bar/nav-bar';
   selector: 'app-above-the-fold',
   imports: [NavBar],
   templateUrl: './above-the-fold.html',
-  styleUrl: './above-the-fold.scss',
+  styleUrls: ['./above-the-fold.scss'],
 })
 export class AboveTheFold { 
 }

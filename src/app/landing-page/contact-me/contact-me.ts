@@ -7,7 +7,7 @@ import { HttpClient} from '@angular/common/http';
   selector: 'app-contact-me',
   imports: [FormsModule, CommonModule],
   templateUrl: './contact-me.html',
-  styleUrl: './contact-me.scss',  
+  styleUrls: ['./contact-me.scss'],  
 })
 export class ContactMe {
 

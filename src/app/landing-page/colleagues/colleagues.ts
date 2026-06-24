@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-colleagues',
   imports: [],
   templateUrl: './colleagues.html',
-  styleUrl: './colleagues.scss',
+  styleUrls: ['./colleagues.scss'],
 })
 export class Colleagues {
 
