@@ -25,8 +25,8 @@ export class BurgerMenu {
 
     if (!this.menuOpen) {
       this.menuOpen = true;
-      this.portraitPosition.sync();
       this.lockBodyScroll();
+      this.portraitPosition.sync();
 
       btn.classList.add('open');
       btn.classList.remove('closing');
@@ -62,7 +62,7 @@ export class BurgerMenu {
   }
 
   private lockBodyScroll(): void {
-    this.scrollY = window.scrollY;
+    this.scrollY = window.scrollY;    
     document.body.style.position = 'fixed';
     document.body.style.top = `-${this.scrollY}px`;
     document.body.style.width = '100%';
