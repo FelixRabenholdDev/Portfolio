@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { PortraitPositionService } from '../../shared/services/portrait-position.service';
 
 @Component({
@@ -15,8 +15,16 @@ export class BurgerMenu {
 
   menuOpen = false;
   private scrollY = 0;
+  private readonly breakpoint = 900;
 
   constructor(private portraitPosition: PortraitPositionService) {}
+
+  @HostListener('window:resize')
+  onResize(): void {
+    if (this.menuOpen && window.innerWidth > this.breakpoint) {
+      this.closeMenu();
+    }
+  }
 
   toggleMenu() {
     const btn = this.burgerBtn.nativeElement;
@@ -46,7 +54,7 @@ export class BurgerMenu {
   }
 
   closeMenu() {
-    if (!this.menuOpen) return; // Schutz gegen doppeltes Aufrufen
+    if (!this.menuOpen) return;
     this.menuOpen = false;
     this.unlockBodyScroll();
 
@@ -62,7 +70,8 @@ export class BurgerMenu {
   }
 
   private lockBodyScroll(): void {
-    this.scrollY = window.scrollY;    
+    this.scrollY = window.scrollY;
+    
     document.body.style.position = 'fixed';
     document.body.style.top = `-${this.scrollY}px`;
     document.body.style.width = '100%';
