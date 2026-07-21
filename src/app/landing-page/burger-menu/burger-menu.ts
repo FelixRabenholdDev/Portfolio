@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { PortraitPositionService } from '@shared/services/portrait-position.service';
+import { PortraitPositionService } from '../../shared/services/portrait-position.service';
 
 @Component({
   selector: 'app-burger-menu',
@@ -14,6 +14,7 @@ export class BurgerMenu {
   @ViewChild('navLinks', { static: false }) navLinks!: ElementRef<HTMLUListElement>;
 
   menuOpen = false;
+  private scrollY = 0;
 
   constructor(private portraitPosition: PortraitPositionService) {}
 
@@ -25,6 +26,8 @@ export class BurgerMenu {
     if (!this.menuOpen) {
       this.menuOpen = true;
       this.portraitPosition.sync();
+      this.lockBodyScroll();
+
       btn.classList.add('open');
       btn.classList.remove('closing');
       root.classList.add('open');
@@ -32,6 +35,8 @@ export class BurgerMenu {
       nav.classList.add('open');
     } else {
       this.menuOpen = false;
+      this.unlockBodyScroll();
+
       btn.classList.add('closing');
       btn.classList.remove('open');
       root.classList.add('closing');
@@ -41,7 +46,10 @@ export class BurgerMenu {
   }
 
   closeMenu() {
+    if (!this.menuOpen) return; // Schutz gegen doppeltes Aufrufen
     this.menuOpen = false;
+    this.unlockBodyScroll();
+
     const btn = this.burgerBtn.nativeElement;
     const root = this.burgerRoot.nativeElement;
     const nav = this.navLinks.nativeElement;
@@ -51,5 +59,19 @@ export class BurgerMenu {
     root.classList.add('closing');
     root.classList.remove('open');
     nav.classList.remove('open');
+  }
+
+  private lockBodyScroll(): void {
+    this.scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.scrollY}px`;
+    document.body.style.width = '100%';
+  }
+
+  private unlockBodyScroll(): void {
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo({ top: this.scrollY, left: 0, behavior: 'instant' as ScrollBehavior });
   }
 }

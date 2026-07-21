@@ -86,8 +86,7 @@
 
 @media (max-width: 900px) {
   .burger {
-    position: fixed;
-    top: 0;
+    position: static;
     width: 100%;
     padding: 8px 24px;
     display: flex;
