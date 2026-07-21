@@ -77,11 +77,11 @@
 }
 
 .burger.open .burger-icon {
-  animation: burgerOpen 0.5s steps(4) forwards;
+  animation: burgerOpen 0.35s steps(4) forwards;
 }
 
 .burger.closing .burger-icon {
-  animation: burgerClose 0.5s steps(4) forwards;
+  animation: burgerClose 0.35s steps(4) forwards;
 }
 
 @media (max-width: 900px) {
@@ -106,12 +106,11 @@
 
   .nav-links {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: min(450px, 90vw);
+    top: var(--portrait-top, 50%);
+    left: var(--portrait-left, 50%);
+    width: var(--portrait-width, min(450px, 90vw));
+    height: var(--portrait-height, auto);
     max-width: 90vw;
-    height: auto;
     background-image: url('/assets/img/shape.svg');
     background-size: contain;
     background-position: center;

@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { PortraitPositionService } from '@shared/services/portrait-position.service';
 
 @Component({
   selector: 'app-burger-menu',
@@ -14,6 +15,8 @@ export class BurgerMenu {
 
   menuOpen = false;
 
+  constructor(private portraitPosition: PortraitPositionService) {}
+
   toggleMenu() {
     const btn = this.burgerBtn.nativeElement;
     const root = this.burgerRoot.nativeElement;
@@ -21,13 +24,11 @@ export class BurgerMenu {
 
     if (!this.menuOpen) {
       this.menuOpen = true;
-      // Button classes (optional)
+      this.portraitPosition.sync();
       btn.classList.add('open');
       btn.classList.remove('closing');
-      // Root container classes used by CSS
       root.classList.add('open');
       root.classList.remove('closing');
-      // Show nav links
       nav.classList.add('open');
     } else {
       this.menuOpen = false;

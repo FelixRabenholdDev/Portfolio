@@ -76,6 +76,10 @@ app-nav-bar {
   z-index: 1000;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @media (max-width: 900px) {
   body {
     padding-top: 100px;
