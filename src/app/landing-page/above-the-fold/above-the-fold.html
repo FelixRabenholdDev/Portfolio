@@ -1,11 +1,11 @@
 <div class="flex_center" id="above_the_fold">
   <div class="image_wrapper">
-    <img class="portrait" #portrait src="assets/img/portrait.png" alt="portrait" />
+    <img class="portrait" #portrait src="assets/img/portrait.png"  [alt]="'HERO.PORTRAIT_ALT' | translate" />
   </div>
   <div class="flex_column">
     <div class="logo_and_buttons">
       <div class="logo">
-        <img class="logo_img" src="assets/img/logo1.png" alt="Developer Logo 1" />
+        <img class="logo_img" src="assets/img/logo1.png" [alt]="'HERO.LOGO_ALT' | translate" />
       </div>
       <div class="social_media_buttons">
         <button class="icon git"></button>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <h1>Felix Rabenhold</h1>
-    <span class="undertitle">FULLSTACK DEVELOPER</span>
+    <span class="undertitle">{{ 'HERO.SUBTITLE' | translate }}</span>
     <a class="arrow" href="#why"></a>
   </div>
 </div>

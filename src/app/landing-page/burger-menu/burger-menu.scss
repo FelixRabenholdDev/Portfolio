@@ -99,10 +99,6 @@
     display: block;
   }
 
-  .language-switch {
-    display: none;
-  }
-
   .nav-links {
     position: fixed;
     top: var(--portrait-top, 50%);
@@ -139,6 +135,25 @@
     text-align: center;
     font-size: 22px;
     padding: 8px 0;
+  }
+
+  .nav-links .language-switch {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  .language-switch .lang {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+  cursor: pointer;
+  }
+
+  .language-switch .lang.active {
+  opacity: 1;
+  border-bottom: 2px solid $nav-font-color;
   }
 
   .nav-links.open {

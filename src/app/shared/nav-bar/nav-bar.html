@@ -4,15 +4,15 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="#why">Why me</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact" class="contact-link">Contact</a></li>
+    <li><a href="#why">{{ 'NAV.WHY' | translate }}</a></li>
+    <li><a href="#skills">{{ 'NAV.SKILLS' | translate }}</a></li>
+    <li><a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a></li>
+    <li><a href="#contact" class="contact-link">{{ 'NAV.CONTACT' | translate }}</a></li>
   </ul>
 
   <div class="language-switch">
-    <span class="lang">DE</span>
-    <span class="lang active">EN</span>
+    <span class="lang" [class.active]="languageService.currentLang === 'de'" (click)="languageService.setLanguage('de')">DE</span>
+    <span class="lang" [class.active]="languageService.currentLang === 'en'" (click)="languageService.setLanguage('en')">EN</span>
   </div>
 </nav>
 

@@ -1,12 +1,16 @@
-import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener, inject } from '@angular/core';
 import { PortraitPositionService } from '../../shared/services/portrait-position.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../shared/services/language.service';
 
 @Component({
   selector: 'app-burger-menu',
+  imports: [TranslatePipe],
   templateUrl: './burger-menu.html',
   styleUrls: ['./burger-menu.scss'],
 })
 export class BurgerMenu {
+  languageService = inject(LanguageService);
 
   @ViewChild('burger', { static: false }) burgerRoot!: ElementRef<HTMLDivElement>;
   @ViewChild('burgerIcon', { static: false }) burgerIcon!: ElementRef<HTMLImageElement>;

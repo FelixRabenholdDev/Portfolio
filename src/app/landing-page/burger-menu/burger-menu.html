@@ -8,14 +8,13 @@
   </button>
 
   <ul class="nav-links" #navLinks>
-    <li><a href="#why" (click)="closeMenu()">Why me</a></li>
-    <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
-    <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
-    <li><a href="#contact" class="contact-link" (click)="closeMenu()">Contact</a></li>
+    <li><a href="#why" (click)="closeMenu()">{{ 'NAV.WHY' | translate }}</a></li>
+    <li><a href="#skills" (click)="closeMenu()">{{ 'NAV.SKILLS' | translate }}</a></li>
+    <li><a href="#projects" (click)="closeMenu()">{{ 'NAV.PROJECTS' | translate }}</a></li>
+    <li><a href="#contact" class="contact-link" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
+    <li class="language-switch">
+      <span class="lang" [class.active]="languageService.currentLang === 'de'" (click)="languageService.setLanguage('de')">DE</span>
+      <span class="lang" [class.active]="languageService.currentLang === 'en'" (click)="languageService.setLanguage('en')">EN</span>
+    </li>
   </ul>
-
-  <div class="language-switch">
-    <span class="lang">DE</span>
-    <span class="lang active">EN</span>
-  </div>
 </div>

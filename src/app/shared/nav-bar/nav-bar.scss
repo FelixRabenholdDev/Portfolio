@@ -65,56 +65,6 @@
   border-bottom: 2px solid $nav-font-color;
 }
 
-.burger {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  .burger-icon {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@keyframes burgerOpen {
-  0% {
-    content: url('../../../../public/assets/img/burger_menu_t0.svg');
-  }
-  33% {
-    content: url('../../../../public/assets/img/burger_menu_t1.svg');
-  }
-  66% {
-    content: url('../../../../public/assets/img/burger_menu_t2.svg');
-  }
-  100% {
-    content: url('../../../../public/assets/img/burger_menu_t3.svg');
-  }
-}
-
-@keyframes burgerClose {
-  0% {
-    content: url('../../../../public/assets/img/burger_menu_t3.svg');
-  }
-  33% {
-    content: url('../../../../public/assets/img/burger_menu_t2.svg');
-  }
-  66% {
-    content: url('../../../../public/assets/img/burger_menu_t1.svg');
-  }
-  100% {
-    content: url('../../../../public/assets/img/burger_menu_t0.svg');
-  }
-}
-
-.burger.open .burger-icon {
-  animation: burgerOpen 0.5s steps(4) forwards;
-}
-
-.burger.closing .burger-icon {
-  animation: burgerClose 0.5s steps(4) forwards;
-}
-
 @media (max-width: 900px) {
   .navbar {
     display: none;

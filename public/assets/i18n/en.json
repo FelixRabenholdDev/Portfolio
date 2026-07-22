@@ -6,6 +6,8 @@
     "CONTACT": "Contact"
   },
   "HERO": {
-    "SUBTITLE": "FULLSTACK DEVELOPER"
+    "SUBTITLE": "FULLSTACK DEVELOPER",
+    "PORTRAIT_ALT": "Portrait",
+    "LOGO_ALT": "Developer Logo"
   }
 }

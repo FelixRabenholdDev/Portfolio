@@ -1,10 +1,11 @@
 import { AfterViewInit, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { NavBar } from '../../shared/nav-bar/nav-bar';
 import { PortraitPositionService } from '@shared/services/portrait-position.service';
 
 @Component({
   selector: 'app-above-the-fold',
-  imports: [NavBar],
+  imports: [NavBar, TranslatePipe],
   templateUrl: './above-the-fold.html',
   styleUrls: ['./above-the-fold.scss'],
 })
