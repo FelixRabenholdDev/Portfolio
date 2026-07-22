@@ -9,5 +9,18 @@
     "SUBTITLE": "FULLSTACK DEVELOPER",
     "PORTRAIT_ALT": "Portrait",
     "LOGO_ALT": "Developer Logo"
+  },
+    "WHY_ME": {
+    "TITLE": "Why me",
+    "LOCATION_ICON_ALT": "Location icon",
+    "LOCATION_HIGHLIGHT": "I am",
+    "LOCATION_TEXT": "located in Bevern.",
+    "TEXT": "Code is more than syntax to me — it's the art of turning complex problems into clear, working solutions. I'm driven by analytical thinking paired with the creativity to find unconventional paths through tricky challenges. I bring persistence when a bug refuses to reveal itself, and in a team I value open communication just as much as collaborating on the best possible solution.",
+    "CTA": "Let's talk"
+  },
+  "SKILLS": {
+    "TITLE": "My Skills",
+    "LEARNING_TITLE": "What I am currently learning",
+    "LEARNING_TEXT": "I'm currently expanding my skillset toward backend development and infrastructure. With Java, I'm deepening my understanding of server-side architecture, while diving into Kubernetes to learn container orchestration and running scalable systems."
   }
 }

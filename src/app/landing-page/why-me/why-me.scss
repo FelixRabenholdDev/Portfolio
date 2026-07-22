@@ -20,23 +20,23 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 60px;
+  gap: 40px;
   height: auto;
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
   }
 }
 
 .flex_center {
   gap: 20px;
-  min-width: 400px;
+  min-width: 300px;
 
   @media (max-width: 600px) {
     gap: 0px;
-    min-width: 300px;
+    min-width: 200px;
   }
 }
 
@@ -58,9 +58,15 @@
 }
 
 .why_me_text {
-  max-width: 300px;
+  max-width: 500px;
   font-size: 18px;
   line-height: 1.6;
+  padding-left: 20px;
+
+    @media (min-width: 1400px) {
+    max-width: 600px;
+    font-size: 19px;
+  }
 }
 
 .lets_talk_button {
@@ -73,6 +79,18 @@
   background-color: transparent;
   align-self: flex-end;
   background-image: url('../../../../public/assets/img/lets_talk.svg');
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  span {
+    color: $pr-color;
+    font-weight: 400;
+    font-size: 18px;
+    pointer-events: none;
+  }
 
   @media (max-width: 900px) {
     display: none;

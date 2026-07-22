@@ -1,19 +1,19 @@
 <section class="why_me" id="why">
-<h2>Why me</h2>
+<h2>{{ 'WHY_ME.TITLE' | translate }}</h2>
 <div class="wrapper">
   <div class="top_row">
     <div class="flex_center">
       <img src="assets/img/location_icon.svg" alt="location_icon" />
       <p class="location_text">
-        <span class="highlight">I am</span> located in Bevern.
+        <span class="highlight">{{ 'WHY_ME.LOCATION_HIGHLIGHT' | translate }}</span> {{ 'WHY_ME.LOCATION_TEXT' | translate }}
       </p>
     </div>
     <div class="why_me_text">
-      Why are you passionate about coding? You can include some key traits like: analytical
-      thinking, creativity, persistence and collaboration. A problem-solving mindset is
-      always nice to have.
+      {{ 'WHY_ME.TEXT' | translate }}
     </div>
   </div>
-  <a class="lets_talk_button" href="#contact"></a>
+  <a class="lets_talk_button" href="#contact">
+    <span>{{ 'WHY_ME.CTA' | translate }}</span>
+  </a>
 </div>
 </section>

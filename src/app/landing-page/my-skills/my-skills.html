@@ -1,69 +1,29 @@
 <section class="skills" id="skills">
-  <h2 class="skills__title">My Skills</h2>
+  <h2 class="skills__title">{{ 'SKILLS.TITLE' | translate }}</h2>
 
   <div class="skills__content">
     <div class="skills__grid">
-      <div class="skill-item">
-        <img src="assets/img/Angular.svg" alt="Angular" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/TypeScript.svg" alt="TypeScript" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/JavaScript.svg" alt="JavaScript" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/HTML.svg" alt="HTML" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/CSS.svg" alt="CSS" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/Rest-API.svg" alt="REST API" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/Firebase.svg" alt="Firebase" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/GIT.svg" alt="Git" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/Material Design.svg" alt="Material Design" />
-      </div>
-
-      <div class="skill-item">
-        <img src="assets/img/Scrum.svg" alt="Scrum" />
+      <div class="skill-item" *ngFor="let skill of skills">
+        <img [src]="skill.icon" [alt]="skill.name" />
+        <span>{{ skill.name }}</span>
       </div>
     </div>
 
     <div class="skills__learning">
-      <p class="learning-title">What I am currently learning</p>
+      <p class="learning-title">{{ 'SKILLS.LEARNING_TITLE' | translate }}</p>
+
+      <div class="learning-icons">
+        <div class="learning-item" *ngFor="let skill of learningSkills">
+          <img [src]="skill.icon" [alt]="skill.name" />
+          <span>{{ skill.name }}</span>
+        </div>
+      </div>
 
       <div class="learning-row">
         <p class="learning-text">
-          Show that you are motivated to continually improve your skills, implement innovative
-          solutions and stay abreast of new technologies.
+          {{ 'SKILLS.LEARNING_TEXT' | translate }}
         </p>
-
-        <div class="learning-icons">
-          <div class="learning-item">
-            <img src="assets/img/React.svg" alt="React" />
-          </div>
-          <div class="learning-item">
-            <img src="assets/img/VueJS.svg" alt="Vue.js" />
-          </div>
-        </div>
       </div>
     </div>
-    <a class="lets_talk_button" href="#contact"></a>
-  </div>
-  
+  </div>  
 </section>

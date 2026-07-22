@@ -56,13 +56,17 @@
 .language-switch .lang {
   font-size: 16px;
   font-weight: 600;
-  opacity: 0.5;
+  color: $bg-color;
   cursor: pointer;
+  transition: color 0.3s;
+}
+
+.language-switch .lang:hover {
+  color: $se-color;
 }
 
 .language-switch .lang.active {
-  opacity: 1;
-  border-bottom: 2px solid $nav-font-color;
+  color: $se-color;
 }
 
 @media (max-width: 900px) {
