@@ -22,7 +22,22 @@
     "LEARNING_TITLE": "I am currently learning",
     "LEARNING_TEXT": "I'm currently expanding my skillset toward backend development and infrastructure."
   },
-    "COMMON": {
+  "COMMON": {
     "LETS_TALK": "Let's talk"
+  },
+  "COLLEAGUES": {
+    "TITLE": "Need a teamplayer?",
+    "SUBTITLE": "Here's what my colleagues say about me",
+   "PROJECT_LABEL": "Project",
+    "LINKEDIN_LABEL": "LinkedIn Profile",
+    "PAUL": {
+     "QUOTE": "Felix is a valuable team player who enriches every team by combining technical competence, a positive attitude and strong social skills. His ability to give others confidence while staying open to different perspectives makes him an ideal colleague."
+    },
+    "JUERGEN": {
+      "QUOTE": "Felix did great work as a true team player. With his backend skills he was indispensable on the project. He was always approachable for his team members. I would gladly work with him again."
+   },
+   "EMIL": {
+     "QUOTE": "Felix stands out through a high degree of personal responsibility. He has strong communication skills that let him address issues within the team objectively and with a solution-oriented mindset. He shows genuine interest in continuously improving processes through detailed analysis and constructive dialogue."
+    }
   }
 }

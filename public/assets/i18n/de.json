@@ -22,7 +22,22 @@
     "LEARNING_TITLE": "Ich lerne aktuell",
     "LEARNING_TEXT": "Ich erweitere aktuell mein Skillset Richtung Backend-Entwicklung und Infrastruktur."
   },
-    "COMMON": {
+  "COMMON": {
     "LETS_TALK": "Lass uns reden"
-  }
+  },
+  "COLLEAGUES": {
+    "TITLE": "Braucht es einen Teamplayer?",
+    "SUBTITLE": "Das sagen meine Kollegen über mich",
+    "PROJECT_LABEL": "Projekt",
+    "LINKEDIN_LABEL": "LinkedIn-Profil",
+    "PAUL": {
+      "QUOTE": "Felix ist ein wertvoller Teamplayer, der durch seine Kombination aus technischer Kompetenz, positiver Einstellung und sozialen Fähigkeiten jedes Team bereichert. Seine Fähigkeit, anderen Sicherheit zu vermitteln und gleichzeitig ein offenes Ohr für verschiedene Perspektiven zu haben, macht ihn zu einem idealen Kollegen."
+    },
+    "JUERGEN": {
+      "QUOTE": "Felix hat als wahrer Teamplayer eine gute Arbeit geleistet. Mit seinen Backend-Fähigkeiten war er unverzichtbar in dem Projekt. Er war für seine Teammitglieder immer ansprechbar. Ich würde immer wieder gerne mit ihm gemeinsam arbeiten."
+    },
+    "EMIL": {
+      "QUOTE": "Felix zeichnet sich durch ein hohes Maß an Eigenverantwortung aus. Er verfügt über eine ausgeprägte Kommunikationsstärke, die es ihm ermöglicht, Fehler im Team sachlich und lösungsorientiert anzusprechen. Er zeigt ein echtes Interesse daran, Prozesse durch detaillierte Analysen und konstruktiven Austausch stetig zu verbessern."
+    }
+  }  
 }

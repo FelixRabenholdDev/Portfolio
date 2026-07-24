@@ -1,12 +1,121 @@
 @import '../../../styles.scss';
 
 .colleagues {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 60px 40px;
+  text-align: center;
 }
 
-.title {
-    font-size: 28px;
+.heading {
+  margin-bottom: 60px;
+
+  .headline {
+    font-family: 'anta';
+    font-size: 32px;
     color: $pr-color;
+  }
+
+  .subtext {
+    font-family: 'anta';
+    font-size: 32px;
+    color: $pr-color;
+    margin-left: 10px;
+  }
+}
+
+.colleagues__cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.colleague-card {
+  width: 340px;
+  aspect-ratio: 1 / 1;
+  background-image: url('../../../../public/assets/img/skill_shape.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 40px;
+  text-align: center;
+  transition: background-image 0.5s ease;
+}
+
+.colleague-card:hover {
+  background-image: url('../../../../public/assets/img/skill_shape_hover.svg');
+}
+
+.colleague-name {
+  font-size: 22px;
+  margin-bottom: 6px;
+  color: $se-color;
+}
+
+.colleague-project {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: $font-color;
+
+  span {
+    color: $pr-color;
+  }
+}
+
+.colleague-quote {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  max-width: 240px;
+}
+
+.colleague-linkedin {
+  font-size: 14px;
+  color: $pr-color;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .heading {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .headline {
+      font-size: 24px;
+    }
+
+    .subtext {
+      font-size: 16px;
+      margin-left: 0;
+      color: $font-color;
+      font-family: 'josefin', sans-serif;
+    }
+  }
+
+  .colleagues__cards {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .colleague-card {
+    flex: 0 0 auto;
+    width: 260px;
+    padding: 30px 24px;
+    scroll-snap-align: start;
+  }
+
+  .colleague-quote {
+    font-size: 13px;
+    max-width: 200px;
+  }
 }
