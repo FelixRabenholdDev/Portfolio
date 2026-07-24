@@ -30,7 +30,7 @@
 }
 
 .colleague-card {
-  width: 340px;
+  width: 360px;
   aspect-ratio: 1 / 1;
   background-image: url('../../../../public/assets/img/skill_shape.svg');
   background-size: contain;
@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 40px;
+  padding: 60px 70px;
   text-align: center;
   transition: background-image 0.5s ease;
 }
@@ -50,14 +50,14 @@
 }
 
 .colleague-name {
-  font-size: 22px;
-  margin-bottom: 6px;
+  font-size: 20px;
+  margin-bottom: 4px;
   color: $se-color;
 }
 
 .colleague-project {
-  font-size: 15px;
-  margin-bottom: 16px;
+  font-size: 14px;
+  margin-bottom: 14px;
   color: $font-color;
 
   span {
@@ -66,14 +66,14 @@
 }
 
 .colleague-quote {
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-  max-width: 240px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  margin-bottom: 14px;
+  max-width: 220px;
 }
 
 .colleague-linkedin {
-  font-size: 14px;
+  font-size: 13px;
   color: $pr-color;
   text-decoration: underline;
 }
@@ -109,13 +109,26 @@
 
   .colleague-card {
     flex: 0 0 auto;
-    width: 260px;
-    padding: 30px 24px;
+    width: 300px;
+    padding: 45px 40px;
+    text-align: left;
     scroll-snap-align: start;
+
+    &:hover {
+      background-image: url('../../../../public/assets/img/skill_shape.svg');
+    }
+  }
+
+  .colleague-name,
+  .colleague-project,
+  .colleague-linkedin {
+    text-align: left;
   }
 
   .colleague-quote {
-    font-size: 13px;
-    max-width: 200px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    max-width: 190px;
+    text-align: left;
   }
 }

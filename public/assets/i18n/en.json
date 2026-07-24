@@ -28,16 +28,16 @@
   "COLLEAGUES": {
     "TITLE": "Need a teamplayer?",
     "SUBTITLE": "Here's what my colleagues say about me",
-   "PROJECT_LABEL": "Project",
+    "PROJECT_LABEL": "Project",
     "LINKEDIN_LABEL": "LinkedIn Profile",
     "PAUL": {
-     "QUOTE": "Felix is a valuable team player who enriches every team by combining technical competence, a positive attitude and strong social skills. His ability to give others confidence while staying open to different perspectives makes him an ideal colleague."
+      "QUOTE": "Felix enriches every team through his blend of technical skill, positive attitude, and strong social competence. He puts others at ease and stays open to different perspectives — a truly ideal colleague."
     },
     "JUERGEN": {
-      "QUOTE": "Felix did great work as a true team player. With his backend skills he was indispensable on the project. He was always approachable for his team members. I would gladly work with him again."
-   },
-   "EMIL": {
-     "QUOTE": "Felix stands out through a high degree of personal responsibility. He has strong communication skills that let him address issues within the team objectively and with a solution-oriented mindset. He shows genuine interest in continuously improving processes through detailed analysis and constructive dialogue."
+      "QUOTE": "Felix was a true team player and indispensable to the project with his backend skills. Always approachable for the team. I'd gladly work with him again."
+    },
+    "EMIL": {
+      "QUOTE": "Felix stands out through personal responsibility and strong communication — he addresses issues objectively and constructively. His structured, analytical approach visibly moves projects forward."
     }
   }
 }
