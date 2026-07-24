@@ -167,12 +167,11 @@
   }
 
   .lets_talk_button {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 55px;
-    margin: 30px auto 0;
+    width: 134px;
+    height: 48px;
     padding: 0;
     border: none;
     background-size: contain;
@@ -183,13 +182,9 @@
 
     span {
       color: $bg-color;
-      font-weight: 600;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 16px;      
       pointer-events: none;
-    }
-
-    &:hover {
-      background-image: url('../../../../public/assets/img/lets_talk_hover.svg');
     }
   }
 }
