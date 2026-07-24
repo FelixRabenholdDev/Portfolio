@@ -4,53 +4,55 @@
   <div class="tabs">
     <button
       *ngFor="let tab of tabs; let i = index"
-      (click)="selectedTab = i"
+      (click)="selectTab(i)"
       [class.active]="selectedTab === i"
     >
       {{ tab }}
     </button>
   </div>
 
-  <div class="content-wrapper" [@fadeAnimation]="selectedTab">
-    <ul class="content">
-      <li class="section">
-        <h4>About the project <span>Duration: {{ projectData[selectedTab].duration }}</span></h4>
-        <p class="text">{{ projectData[selectedTab].about }}</p>
-      </li>
+  @for (tab of [selectedTab]; track tab) {
+    <div class="content-wrapper" animate.enter="fadeIn">
+      <ul class="content">
+        <li class="section">
+          <h4>About the project <span>Duration: {{ projectData[selectedTab].duration }}</span></h4>
+          <p class="text">{{ projectData[selectedTab].about }}</p>
+        </li>
 
-      <li class="section">
-        <h4>How I have organised my work process</h4>
-        <p>{{ projectData[selectedTab].workProcess }}</p>
-      </li>
+        <li class="section">
+          <h4>How I have organised my work process</h4>
+          <p>{{ projectData[selectedTab].workProcess }}</p>
+        </li>
 
-      <li class="section">
-        <h4>My group work experience</h4>
-        <p>{{ projectData[selectedTab].group }}</p>
-      </li>
-    </ul>
+        <li class="section">
+          <h4>My group work experience</h4>
+          <p>{{ projectData[selectedTab].group }}</p>
+        </li>
+      </ul>
 
-    <div class="image-wrapper">
-      <div class="technologies">
-        <p>Technologies</p>
-        <div class="tech-icons">
-          <img
-            *ngFor="let tech of projectData[selectedTab].technologies"
-            [src]="tech.icon"
-            [alt]="tech.name"
-          />
+      <div class="image-wrapper">
+        <div class="technologies">
+          <p>Technologies</p>
+          <div class="tech-icons">
+            <img
+              *ngFor="let tech of projectData[selectedTab].technologies"
+              [src]="tech.icon"
+              [alt]="tech.name"
+            />
+          </div>
+        </div>
+        <div class="image-area">
+          <img            
+              [src]="projectData[selectedTab].image"
+              [alt]="projectData[selectedTab].title + ' Screenshot'"
+            />
+        </div>
+
+        <div class="buttons">
+          <a [href]="projectData[selectedTab].live" target="_blank" class="btn">Live Test</a>
+          <a [href]="projectData[selectedTab].github" target="_blank" class="btn">GitHub</a>
         </div>
       </div>
-      <div class="image-area">
-        <img            
-            [src]="projectData[selectedTab].image"
-            [alt]="projectData[selectedTab].title + ' Screenshot'"
-          />
-      </div>
-
-      <div class="buttons">
-        <a [href]="projectData[selectedTab].live" target="_blank" class="btn">Live Test</a>
-        <a [href]="projectData[selectedTab].github" target="_blank" class="btn">GitHub</a>
-      </div>
     </div>
-  </div>
+  }
 </section>
