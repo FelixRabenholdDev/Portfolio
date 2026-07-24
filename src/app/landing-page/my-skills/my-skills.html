@@ -12,18 +12,22 @@
     <div class="skills__learning">
       <p class="learning-title">{{ 'SKILLS.LEARNING_TITLE' | translate }}</p>
 
-      <div class="learning-icons">
-        <div class="learning-item" *ngFor="let skill of learningSkills">
-          <img [src]="skill.icon" [alt]="skill.name" />
-          <span>{{ skill.name }}</span>
-        </div>
-      </div>
-
       <div class="learning-row">
         <p class="learning-text">
           {{ 'SKILLS.LEARNING_TEXT' | translate }}
         </p>
+
+        <div class="learning-icons">
+          <div class="learning-item" *ngFor="let skill of learningSkills">
+            <img [src]="skill.icon" [alt]="skill.name" />
+            <span>{{ skill.name }}</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>  
+  </div>
+  
+  <a class="lets_talk_button" href="#contact">
+    <span>{{ 'COMMON.LETS_TALK' | translate }}</span>
+  </a>
 </section>

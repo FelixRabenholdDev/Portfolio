@@ -15,12 +15,14 @@
     "LOCATION_ICON_ALT": "Standort-Icon",
     "LOCATION_HIGHLIGHT": "Ich befinde mich",
     "LOCATION_TEXT": "in Bevern.",
-    "TEXT": "Code ist für mich mehr als nur Syntax – es ist die Kunst, komplexe Probleme in klare, funktionierende Lösungen zu verwandeln. Mich treibt eine analytische Denkweise an, gepaart mit der Kreativität, auch bei kniffligen Herausforderungen unkonventionelle Wege zu finden. Ausdauer bringe ich mit, wenn ein Bug sich hartnäckig versteckt, und im Team schätze ich den offenen Austausch genauso wie das gemeinsame Tüfteln an der besten Lösung.",
-    "CTA": "Lass uns reden"
+    "TEXT": "Code ist für mich mehr als nur Syntax – es ist die Kunst, komplexe Probleme in klare, funktionierende Lösungen zu verwandeln. Mich treibt eine analytische Denkweise an, gepaart mit der Kreativität, auch bei kniffligen Herausforderungen unkonventionelle Wege zu finden. Ausdauer bringe ich mit, wenn ein Bug sich hartnäckig versteckt, und im Team schätze ich den offenen Austausch genauso wie das gemeinsame Tüfteln an der besten Lösung."
   },
   "SKILLS": {
     "TITLE": "Meine Skills",
-    "LEARNING_TITLE": "Was ich gerade lerne",
-    "LEARNING_TEXT": "Ich erweitere aktuell mein Skillset Richtung Backend-Entwicklung und Infrastruktur. Mit Java vertiefe ich mein Verständnis für serverseitige Architektur, während ich mich mit Kubernetes in Container-Orchestrierung und den Betrieb skalierbarer Systeme einarbeite."
+    "LEARNING_TITLE": "Ich lerne aktuell",
+    "LEARNING_TEXT": "Ich erweitere aktuell mein Skillset Richtung Backend-Entwicklung und Infrastruktur."
+  },
+    "COMMON": {
+    "LETS_TALK": "Lass uns reden"
   }
 }

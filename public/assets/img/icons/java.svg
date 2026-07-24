@@ -1,7 +1,7 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <ellipse cx="27" cy="47" rx="16" ry="3" fill="#F9CB71"/>
-  <path d="M14 24H38V38C38 42.4183 34.4183 46 30 46H22C17.5817 46 14 42.4183 14 38V24Z" fill="#F9CB71"/>
-  <path d="M38 27H42C44.7614 27 47 29.2386 47 32C47 34.7614 44.7614 37 42 37H38V33H41C41.5523 33 42 32.5523 42 32C42 31.4477 41.5523 31 41 31H38V27Z" fill="#F9CB71"/>
-  <path d="M21 20C21 17 24 17 24 14C24 12 22.5 11.5 22.5 11.5" stroke="#F9CB71" stroke-width="2" stroke-linecap="round" fill="none"/>
-  <path d="M29 20C29 17 32 17 32 14C32 12 30.5 11.5 30.5 11.5" stroke="#F9CB71" stroke-width="2" stroke-linecap="round" fill="none"/>
+<svg width="60" height="60" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="26" cy="50" rx="21" ry="3.5" fill="#F9CB71"/>
+  <path d="M8 20H44V34C44 40.6274 38.6274 46 32 46H20C13.3726 46 8 40.6274 8 34V20Z" fill="#F9CB71"/>
+  <path d="M44 25H49C52.3137 25 55 27.6863 55 31C55 34.3137 52.3137 37 49 37H44V32H48C48.5523 32 49 31.5523 49 31C49 30.4477 48.5523 30 48 30H44V25Z" fill="#F9CB71"/>
+  <path d="M17 18C17 14.5 20.5 14.5 20.5 11C20.5 8.5 18.5 8 18.5 8" stroke="#F9CB71" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <path d="M35 18C35 14.5 31.5 14.5 31.5 11C31.5 8.5 33.5 8 33.5 8" stroke="#F9CB71" stroke-width="2.2" stroke-linecap="round" fill="none"/>
 </svg>

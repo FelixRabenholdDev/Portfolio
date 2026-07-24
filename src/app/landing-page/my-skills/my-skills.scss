@@ -58,8 +58,15 @@
     transition: background-image 0.5s ease;
 
     .learning-title {
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       margin-bottom: 25px;
+    }
+
+    .learning-row {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 20px;
     }
 
     .learning-icons {
@@ -74,7 +81,7 @@
         align-items: center;
 
         img {
-          width: 50px;
+          width: 40px;
         }
         
         span {
@@ -95,6 +102,10 @@
   &__learning:hover {
     background-image: url('../../../../public/assets/img/skill_shape_hover.svg');
   }
+}
+
+.lets_talk_button {
+  display: none;
 }
 
 @media (max-width: 1100px) {
@@ -157,15 +168,25 @@
 
   .lets_talk_button {
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 55px;
+    margin: 30px auto 0;
     padding: 0;
     border: none;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
-    align-self: flex-end;
-    background-image: url('../../../../public/assets/img/lets_talk.svg');
+    background-image: url('../../../../public/assets/img/lets_talk_filled.svg');
+    text-decoration: none;
+
+    span {
+      color: $bg-color;
+      font-weight: 600;
+      font-size: 16px;
+      pointer-events: none;
+    }
 
     &:hover {
       background-image: url('../../../../public/assets/img/lets_talk_hover.svg');
