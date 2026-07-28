@@ -60,5 +60,44 @@
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Impressum"
+  },
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "IMPRINT": {
+      "TITLE": "Angaben gemäß § 5 TMG",
+      "NAME": "Felix Rabenhold",
+      "CARE_OF": "c/o Online-Impressum #5821",
+      "ADDRESS": "Europaring 90",
+      "CITY": "53757 St Augustin",
+      "EMAIL_LABEL": "E-Mail",
+      "EMAIL": "felixrabenhold@mail.online-impressum.de"
+    },
+    "ACCEPTANCE": {
+      "TITLE": "Nutzungsbedingungen",
+      "TEXT": "Mit dem Zugriff auf und der Nutzung dieser Website erklärst du dich mit den folgenden Bedingungen sowie allen Richtlinien einverstanden, die von Zeit zu Zeit veröffentlicht werden können. Ich behalte mir vor, diese Bedingungen jederzeit ohne vorherige Ankündigung zu ändern."
+    },
+    "SCOPE": {
+      "TITLE": "Umfang und Eigentum der Inhalte",
+      "TEXT_1": "Diese Website wurde von mir im Rahmen meiner persönlichen Weiterbildung als Fullstack-Entwickler erstellt und dient der Präsentation meiner Projekte und Fähigkeiten.",
+      "TEXT_2": "Die Gestaltung sowie sämtliche Inhalte dieser Website liegen in meinem Eigentum. Eine unautorisierte Nutzung, Reproduktion, Modifikation oder Verbreitung ist untersagt."
+    },
+    "PROPRIETARY": {
+      "TITLE": "Eigentumsrechte",
+      "TEXT": "Ich behalte mir alle Rechte an dieser Website vor, einschließlich sämtlicher urheberrechtlich geschützter Inhalte, Marken und sonstiger geschützter Informationen."
+    },
+    "USE": {
+      "TITLE": "Nutzung der Website",
+      "TEXT": "Diese Website ist ausschließlich für rechtmäßige Zwecke gemäß geltendem Recht bestimmt. Jede Nutzung zu illegalen Zwecken oder zur Belästigung, Bedrohung oder Einschüchterung anderer ist strengstens untersagt. Du bist allein für deine Interaktionen mit anderen Nutzern dieser Website verantwortlich."
+    },
+    "DISCLAIMER": {
+      "TITLE": "Haftungsausschluss",
+      "TEXT": "Diese Website wird ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten Dritter. Ich hafte in keinem Fall für direkte, indirekte, zufällige, besondere oder Folgeschäden im Zusammenhang mit der Nutzung dieser Website."
+    },
+    "INDEMNITY": {
+      "TITLE": "Freistellung",
+      "TEXT": "Du erklärst dich damit einverstanden, mich von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Verbindlichkeiten (einschließlich angemessener Anwaltskosten) freizustellen, die sich aus oder im Zusammenhang mit deiner Nutzung dieser Website ergeben."
+    },
+    "CONTACT_NOTE": "Bei Fragen oder Hinweisen kontaktiere mich bitte über die oben genannte E-Mail-Adresse.",
+    "DATE_LABEL": "Stand"
   }
 }

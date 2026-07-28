@@ -1,0 +1,52 @@
+@import '../../styles.scss';
+
+.legal-notice {
+  padding: 60px 200px 100px;
+  color: $font-color;
+
+  h1 {
+    color: $pr-color;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    color: $pr-color;
+    font-size: 22px;
+    text-align: left;
+    padding-bottom: 0;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+
+  p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .date {
+    margin-top: 24px;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 900px) {
+    padding: 40px 20px 60px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p, ul {
+      font-size: 14px;
+    }
+  }
+}

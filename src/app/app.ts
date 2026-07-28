@@ -1,12 +1,11 @@
 import { Component, signal, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LandingPage } from './landing-page/landing-page';
 import { Footer } from './shared/footer/footer';
 import { LanguageService } from './shared/services/language.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPage, Footer],
+  imports: [RouterOutlet, Footer],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })

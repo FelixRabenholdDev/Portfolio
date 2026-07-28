@@ -60,5 +60,44 @@
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Legal notice"
+  },
+  "LEGAL": {
+    "TITLE": "Legal Notice",
+    "IMPRINT": {
+      "TITLE": "Imprint",
+      "NAME": "Felix Rabenhold",
+      "CARE_OF": "c/o Online-Impressum #5821",
+      "ADDRESS": "Europaring 90",
+      "CITY": "53757 St Augustin",
+      "EMAIL_LABEL": "E-Mail",
+      "EMAIL": "felixrabenhold@mail.online-impressum.de"
+    },
+    "ACCEPTANCE": {
+      "TITLE": "Acceptance of terms",
+      "TEXT": "By accessing and using this website, you agree to the following terms and conditions, as well as any policies that may be published from time to time. I reserve the right to update or change these terms at any time without notice."
+    },
+    "SCOPE": {
+      "TITLE": "Scope and ownership of the content",
+      "TEXT_1": "This website was created by me as part of my personal development as a fullstack developer and serves to showcase my projects and skills.",
+      "TEXT_2": "The design and all content of this website are owned by me. Unauthorized use, reproduction, modification, or distribution is prohibited."
+    },
+    "PROPRIETARY": {
+      "TITLE": "Proprietary rights",
+      "TEXT": "I retain all rights to this website, including all copyrighted material, trademarks, and other proprietary information."
+    },
+    "USE": {
+      "TITLE": "Use of the website",
+      "TEXT": "This website is intended for lawful purposes only, in accordance with applicable laws and regulations. Any use for illegal activities, or to harass, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of this website."
+    },
+    "DISCLAIMER": {
+      "TITLE": "Disclaimer of warranties and limitation of liability",
+      "TEXT": "This website is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will I be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of this website."
+    },
+    "INDEMNITY": {
+      "TITLE": "Indemnity",
+      "TEXT": "You agree to indemnify, defend, and hold me harmless from any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of this website."
+    },
+    "CONTACT_NOTE": "For any questions or notices, please contact me at the email address above.",
+    "DATE_LABEL": "Last updated"
   }
 }
