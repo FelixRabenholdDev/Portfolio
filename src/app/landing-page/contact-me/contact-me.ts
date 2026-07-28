@@ -100,4 +100,18 @@ export class ContactMe {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email.trim());
   }
+
+  onAutofillDetected(event: AnimationEvent, field: 'name' | 'email' | 'message'): void {
+  if (event.animationName !== 'onAutoFillStart') return;
+
+  const input = event.target as HTMLInputElement | HTMLTextAreaElement;
+
+  setTimeout(() => {
+    this.contactData[field] = input.value;
+
+    if (field === 'name') this.nameError = false;
+    if (field === 'email') this.emailError = false;
+    if (field === 'message') this.messageError = false;
+    });
+  }
 }

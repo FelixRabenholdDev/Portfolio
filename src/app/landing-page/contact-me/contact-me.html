@@ -3,8 +3,7 @@
 
   <div class="intro-wrapper">
     <p class="intro-text">
-      {{ 'CONTACT.INTRO_TEXT_1' | translate }}<br /><br />
-      {{ 'CONTACT.INTRO_TEXT_2' | translate }}
+      {{ 'CONTACT.INTRO_TEXT_1' | translate }}
     </p>
 
     <div class="contact-details">
@@ -37,6 +36,7 @@
           [class.error]="nameError"
           [class.valid]="!nameError && isValid(contactData.name)"
           (input)="nameError = false"
+          (animationstart)="onAutofillDetected($event, 'name')"
         />
       </div>
 
@@ -49,6 +49,7 @@
           [class.error]="emailError"
           [class.valid]="!emailError && isEmailValid(contactData.email)"
           (input)="emailError = false"
+          (animationstart)="onAutofillDetected($event, 'email')"
         />
       </div>
     </div>
@@ -61,6 +62,7 @@
         [class.error]="messageError"
         [class.valid]="!messageError && isValid(contactData.message)"
         (input)="messageError = false"
+        (animationstart)="onAutofillDetected($event, 'message')"
       ></textarea>
     </div>
 
