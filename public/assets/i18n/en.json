@@ -57,5 +57,8 @@
     "SENDING": "Sending …",
     "SUCCESS": "Thanks for your message! I'll get back to you soon.",
     "ERROR": "Something went wrong. Please try again later."
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Legal notice"
   }
 }

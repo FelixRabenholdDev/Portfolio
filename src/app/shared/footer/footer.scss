@@ -21,8 +21,13 @@
     line-height: 24px;
   }
 
-  .legal-link:hover {
-    color: $font-color;
+  .legal-link {
+    color: $bg-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $font-color;
+    }
   }
 
   .footer-logo {

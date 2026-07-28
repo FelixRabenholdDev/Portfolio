@@ -57,5 +57,8 @@
     "SENDING": "Wird gesendet …",
     "SUCCESS": "Danke für deine Nachricht! Ich melde mich zeitnah bei dir.",
     "ERROR": "Etwas ist schiefgelaufen. Bitte versuch es später erneut."
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Impressum"
   }
 }

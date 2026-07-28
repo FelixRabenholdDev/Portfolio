@@ -4,6 +4,11 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient} from '@angular/common/http';
 import { TranslatePipe } from '@ngx-translate/core';
 
+interface MailResponse {
+  success: boolean;
+  error?: string;
+}
+
 @Component({
   selector: 'app-contact-me',
   imports: [FormsModule, CommonModule, TranslatePipe],
@@ -29,24 +34,21 @@ export class ContactMe {
   submitSuccess = false;
   submitError = false;
 
-  private readonly mailTest = true;
+  private readonly mailTest = false;
 
   private readonly post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://felixrabenhold.de/backend/sendMail.php',
     body: (payload: typeof this.contactData) => JSON.stringify(payload),
     options: {
       headers: {
         'Content-Type': 'text/plain',        
       },
-      responseType: 'text' as const,
     },
   };
 
   send(ngForm: NgForm): void {
     this.submitSuccess = false;
     this.submitError = false;
-
-    console.log('Form data:', this.contactData);
     
     this.nameError = !this.isValid(this.contactData.name);
     this.messageError = !this.isValid(this.contactData.message);
@@ -69,17 +71,23 @@ export class ContactMe {
     }
 
     this.http
-      .post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
+      .post<MailResponse>(this.post.endPoint, this.post.body(this.contactData), this.post.options)
       .subscribe({
-        next: () => {
+        next: (response) => {
           this.isSending = false;
-          this.submitSuccess = true;
-          ngForm.resetForm();
+          if (response.success) {
+            this.submitSuccess = true;
+            ngForm.resetForm();
+          } else {
+            this.submitError = true;
+            console.error('Mail-Versand fehlgeschlagen:', response.error);
+          }
         },
         error: (error) => {
           console.error(error);
           this.isSending = false;
           this.submitError = true;
+          console.error(error);
         },
       });
   }
