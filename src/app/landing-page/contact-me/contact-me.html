@@ -1,21 +1,28 @@
 <section class="contact" id="contact">
-  <h2 class="headline">Contact me</h2>
+  <h2 class="headline">{{ 'CONTACT.HEADLINE' | translate }}</h2>
   <a class="arrow" href="#above_the_fold"></a>
 
   <div class="intro-wrapper">
     <p class="intro-text">
-      Encourage people to contact you and describe what role you are interested in. Show that you
-      will add value to their projects through your work.<br /><br />
-      Example: Feel free to get in touch with job offers or opportunities such as …
+      {{ 'CONTACT.INTRO_TEXT_1' | translate }}<br /><br />
+      {{ 'CONTACT.INTRO_TEXT_2' | translate }}
     </p>
 
     <div class="contact-details">
       <div class="detail-item">
-        <span class="mail"></span>
+        <a
+          class="mail"
+          href="mailto:kontakt@deine-domain.de"
+          [attr.aria-label]="'CONTACT.MAIL_ARIA' | translate"
+        ></a>
       </div>
 
       <div class="detail-item">
-        <span class="phone"></span>
+        <a
+          class="phone"
+          href="tel:+491234567890"
+          [attr.aria-label]="'CONTACT.PHONE_ARIA' | translate"
+        ></a>
       </div>
     </div>
   </div>
@@ -23,7 +30,7 @@
   <form class="form" (submit)="send(contactForm); $event.preventDefault()" #contactForm="ngForm">
     <div class="row">
       <div class="field">
-        <label [class.error]="nameError">Your name</label>
+        <label [class.error]="nameError">{{ 'CONTACT.NAME_LABEL' | translate }}</label>
         <input
           type="text"
           name="name"
@@ -35,7 +42,7 @@
       </div>
 
       <div class="field">
-        <label [class.error]="emailError">Your Email</label>
+        <label [class.error]="emailError">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
         <input
           type="email"
           name="email"
@@ -48,7 +55,7 @@
     </div>
 
     <div class="field">
-      <label [class.error]="messageError">Your Message</label>
+      <label [class.error]="messageError">{{ 'CONTACT.MESSAGE_LABEL' | translate }}</label>
       <textarea
         name="message"
         [(ngModel)]="contactData.message"
@@ -60,20 +67,39 @@
 
     <label class="privacy-row">
       <span class="checkbox-box">
-        <input type="checkbox" name="privacyAccepted"
-        class="real-checkbox" [(ngModel)]="privacyAccepted"/>
+        <input 
+          type="checkbox" 
+          name="privacyAccepted"
+          class="real-checkbox" 
+          [(ngModel)]="privacyAccepted"
+          (change)="privacyError = false"
+        />
         <span class="custom-checkbox" [class.checked]="privacyAccepted"></span>
       </span>
 
       <span class="privacy-text">
-        I've read the <a href="#">privacy policy</a> and agree to the processing.
+        {{ 'CONTACT.PRIVACY_TEXT_PRE' | translate }}
+        <a href="#">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+        {{ 'CONTACT.PRIVACY_TEXT_POST' | translate }}
       </span>
     </label>
 
-    <p class="privacy-error" *ngIf="privacyError">Please accept the privacy policy</p>
+    @if (privacyError) {
+      <p class="privacy-error">{{ 'CONTACT.PRIVACY_ERROR' | translate }}</p>
+    }
+
+    @if (submitSuccess) {
+      <p class="submit-feedback success">{{ 'CONTACT.SUCCESS' | translate }}</p>
+    }
+
+    @if (submitError) {
+      <p class="submit-feedback error-text">{{ 'CONTACT.ERROR' | translate }}</p>
+    }
 
     <div class="send-wrapper">
-      <button class="send-btn" [disabled]="!privacyAccepted">Send</button>
+      <button class="send-btn" [disabled]="isSending">
+        {{ (isSending ? 'CONTACT.SENDING' : 'CONTACT.SEND') | translate }}
+      </button>
     </div>
   </form>
 </section>

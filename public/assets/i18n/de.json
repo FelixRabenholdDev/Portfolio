@@ -39,5 +39,23 @@
     "EMIL": {
       "QUOTE": "Felix überzeugt durch Eigenverantwortung und starke Kommunikation – er spricht Probleme sachlich und lösungsorientiert an. Seine strukturierte, analytische Arbeitsweise bringt Projekte spürbar voran."
     }
-  }  
+  },
+  "CONTACT": {
+    "HEADLINE": "Kontakt",
+    "INTRO_TEXT_1": "Ich freue mich über Anfragen zu Stellenangeboten oder spannenden Projekten, bei denen ich mit meinen Fähigkeiten einen Mehrwert schaffen kann.",
+    "INTRO_TEXT_2": "Zum Beispiel: Melde dich gerne bei Jobangeboten, Freelance-Projekten oder wenn du einfach über Möglichkeiten sprechen möchtest.",
+    "MAIL_ARIA": "E-Mail schreiben",
+    "PHONE_ARIA": "Anrufen",
+    "NAME_LABEL": "Dein Name",
+    "EMAIL_LABEL": "Deine E-Mail",
+    "MESSAGE_LABEL": "Deine Nachricht",
+    "PRIVACY_TEXT_PRE": "Ich habe die",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_TEXT_POST": "gelesen und stimme der Verarbeitung zu.",
+    "PRIVACY_ERROR": "Bitte akzeptiere die Datenschutzerklärung",
+    "SEND": "Senden",
+    "SENDING": "Wird gesendet …",
+    "SUCCESS": "Danke für deine Nachricht! Ich melde mich zeitnah bei dir.",
+    "ERROR": "Etwas ist schiefgelaufen. Bitte versuch es später erneut."
+  }
 }

@@ -39,5 +39,23 @@
     "EMIL": {
       "QUOTE": "Felix stands out through personal responsibility and strong communication — he addresses issues objectively and constructively. His structured, analytical approach visibly moves projects forward."
     }
+  },
+  "CONTACT": {
+    "HEADLINE": "Contact me",
+    "INTRO_TEXT_1": "I'm happy to hear about job offers or exciting projects where my skills can add real value.",
+    "INTRO_TEXT_2": "For example: feel free to reach out about job offers, freelance projects, or simply to talk about opportunities.",
+    "MAIL_ARIA": "Send an email",
+    "PHONE_ARIA": "Call",
+    "NAME_LABEL": "Your name",
+    "EMAIL_LABEL": "Your Email",
+    "MESSAGE_LABEL": "Your Message",
+    "PRIVACY_TEXT_PRE": "I've read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_TEXT_POST": "and agree to the processing.",
+    "PRIVACY_ERROR": "Please accept the privacy policy",
+    "SEND": "Send",
+    "SENDING": "Sending …",
+    "SUCCESS": "Thanks for your message! I'll get back to you soon.",
+    "ERROR": "Something went wrong. Please try again later."
   }
 }
