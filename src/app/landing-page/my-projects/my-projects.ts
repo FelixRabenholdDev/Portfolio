@@ -26,7 +26,7 @@ export class MyProjects {
         { name: 'JavaScript', icon: 'assets/img/JavaScript_project.svg' },
         { name: 'CSS', icon: 'assets/img/CSS_project.svg' },
       ],
-      image: 'assets/img/DA_Bubble.jpg',
+      image: 'assets/img/Pokedex.jpg',
     },
     {
       title: 'Shroomie',
@@ -74,7 +74,7 @@ export class MyProjects {
         { name: 'JavaScript', icon: 'assets/img/JavaScript_project.svg' },
         { name: 'CSS', icon: 'assets/img/CSS_project.svg' },
       ],
-      image: 'assets/img/Coming_soon.jpg',
+      image: 'assets/img/Coderr.jpg',
     },
   ];
 
