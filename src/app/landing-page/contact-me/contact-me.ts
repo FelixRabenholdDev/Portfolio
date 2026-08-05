@@ -65,7 +65,7 @@ export class ContactMe {
       setTimeout(() => {
         this.isSending = false;
         this.submitSuccess = true;
-        ngForm.resetForm();
+        this.resetForm(ngForm);
       }, 500);
       return;
     }
@@ -77,7 +77,7 @@ export class ContactMe {
           this.isSending = false;
           if (response.success) {
             this.submitSuccess = true;
-            ngForm.resetForm();
+            this.resetForm(ngForm);
           } else {
             this.submitError = true;
             console.error('Mail-Versand fehlgeschlagen:', response.error);
@@ -92,11 +92,12 @@ export class ContactMe {
       });
   }
 
-  isValid(value: string) {    
-    return value.trim().length > 0;
+  isValid(value: string | null | undefined): boolean {
+    return !!value && value.trim().length > 0;
   }
 
-  isEmailValid(email: string): boolean {
+  isEmailValid(email: string | null | undefined): boolean {
+    if (!email) return false;
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email.trim());
   }
@@ -113,5 +114,11 @@ export class ContactMe {
     if (field === 'email') this.emailError = false;
     if (field === 'message') this.messageError = false;
     });
+  }
+
+  private resetForm(ngForm: NgForm): void {
+    this.contactData = { name: '', email: '', message: '' };
+    this.privacyAccepted = false;
+    ngForm.resetForm();
   }
 }
