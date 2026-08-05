@@ -40,6 +40,39 @@
       "QUOTE": "Felix stands out through personal responsibility and strong communication — he addresses issues objectively and constructively. His structured, analytical approach visibly moves projects forward."
     }
   },
+  "PROJECTS": {
+    "TITLE": "My Projects",
+    "ABOUT_LABEL": "About the project",
+    "DURATION_LABEL": "Duration",
+    "WORK_PROCESS_LABEL": "How I have organised my work process",
+    "GROUP_LABEL": "My group work experience",
+    "TECHNOLOGIES_LABEL": "Technologies",
+    "LIVE_TEST": "Live Test",
+    "POKEDEX": {
+      "DURATION": "2 weeks",
+      "ABOUT": "Use of the Pokédex API for an individual Pokédex site.",
+      "WORK_PROCESS": "Modularized components, clean naming, and extensive documentation.",
+      "GROUP": "Solo project."
+    },
+    "SHROOMIE": {
+      "DURATION": "1 week",
+      "ABOUT": "A jump-and-run game built with JavaScript.",
+      "WORK_PROCESS": "Structured code with classes and separated logic and rendering.",
+      "GROUP": "Solo project."
+    },
+    "JOIN": {
+      "DURATION": "2 weeks",
+      "ABOUT": "A Kanban board similar to Trello.",
+      "WORK_PROCESS": "Reusable components and a TypeScript-based architecture.",
+      "GROUP": "Worked in a team of 5, built the backend database with Firebase."
+    },
+    "CODERR": {
+      "DURATION": "3 weeks",
+      "ABOUT": "A platform for freelance developers.",
+      "WORK_PROCESS": "Deploying server and database logic.",
+      "GROUP": "Solo project."
+    }
+  },
   "CONTACT": {
     "HEADLINE": "Contact me",
     "INTRO_TEXT_1": "I'm happy to hear about job offers or exciting projects where my skills can add real value.",

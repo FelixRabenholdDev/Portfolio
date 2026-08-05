@@ -1,5 +1,5 @@
 <section class="projects widescreen" id="projects">
-  <h2 class="title">My Projects</h2>
+  <h2 class="title">{{ 'PROJECTS.TITLE' | translate }}</h2>
 
   <div class="tabs">
     <button
@@ -15,24 +15,27 @@
     <div class="content-wrapper" animate.enter="fadeIn">
       <ul class="content">
         <li class="section">
-          <h4>About the project <span>Duration: {{ projectData[selectedTab].duration }}</span></h4>
-          <p class="text">{{ projectData[selectedTab].about }}</p>
+          <h4>
+            {{ 'PROJECTS.ABOUT_LABEL' | translate }}
+            <span>{{ 'PROJECTS.DURATION_LABEL' | translate }}: {{ projectData[selectedTab].durationKey | translate }}</span>
+          </h4>
+          <p class="text">{{ projectData[selectedTab].aboutKey | translate }}</p>
         </li>
 
         <li class="section">
-          <h4>How I have organised my work process</h4>
-          <p>{{ projectData[selectedTab].workProcess }}</p>
+          <h4>{{ 'PROJECTS.WORK_PROCESS_LABEL' | translate }}</h4>
+          <p>{{ projectData[selectedTab].workProcessKey | translate }}</p>
         </li>
 
         <li class="section">
-          <h4>My group work experience</h4>
-          <p>{{ projectData[selectedTab].group }}</p>
+          <h4>{{ 'PROJECTS.GROUP_LABEL' | translate }}</h4>
+          <p>{{ projectData[selectedTab].groupKey | translate }}</p>
         </li>
       </ul>
 
       <div class="image-wrapper">
         <div class="technologies">
-          <p>Technologies</p>
+          <p>{{ 'PROJECTS.TECHNOLOGIES_LABEL' | translate }}</p>
           <div class="tech-icons">
             <img
               *ngFor="let tech of projectData[selectedTab].technologies"
@@ -49,7 +52,7 @@
         </div>
 
         <div class="buttons">
-          <a [href]="projectData[selectedTab].live" target="_blank" class="btn">Live Test</a>
+          <a [href]="projectData[selectedTab].live" target="_blank" class="btn">{{ 'PROJECTS.LIVE_TEST' | translate }}</a>
           <a [href]="projectData[selectedTab].github" target="_blank" class="btn">GitHub</a>
         </div>
       </div>

@@ -1,10 +1,28 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+
+interface ProjectTech {
+  name: string;
+  icon: string;
+}
+
+interface Project {
+  title: string;
+  durationKey: string;
+  aboutKey: string;
+  workProcessKey: string;
+  groupKey: string;
+  live: string;
+  github: string;
+  technologies: ProjectTech[];
+  image: string;
+}
 
 @Component({
   selector: 'app-my-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './my-projects.html',
   styleUrls: ['./my-projects.scss'],  
 })
@@ -12,13 +30,13 @@ export class MyProjects {
   tabs = ['1. Pokedex', '2. Shroomie', '3. Join', '4. Coderr'];
   selectedTab = 0;
 
-  projectData = [
+  projectData: Project[] = [
     {
       title: 'Pokedex',
-      duration: '2 weeks',
-      about: `Use of the Pokedex API for an individual Pokedex Site.`,
-      workProcess: 'Modularized components, clean naming, and extensive documentation.',
-      group: 'Solo project.',
+      durationKey: 'PROJECTS.POKEDEX.DURATION',
+      aboutKey: 'PROJECTS.POKEDEX.ABOUT',
+      workProcessKey: 'PROJECTS.POKEDEX.WORK_PROCESS',
+      groupKey: 'PROJECTS.POKEDEX.GROUP',
       live: 'https://pokedex.felixrabenhold.de/',
       github: 'https://github.com/FelixRabenholdDev/Pokedex',
       technologies: [
@@ -30,10 +48,10 @@ export class MyProjects {
     },
     {
       title: 'Shroomie',
-      duration: '1 week',
-      about: 'A jump-and-run game built with JavaScript.',
-      workProcess: 'Structured code with classes and separated logic + rendering.',
-      group: 'Solo project.',
+      durationKey: 'PROJECTS.SHROOMIE.DURATION',
+      aboutKey: 'PROJECTS.SHROOMIE.ABOUT',
+      workProcessKey: 'PROJECTS.SHROOMIE.WORK_PROCESS',
+      groupKey: 'PROJECTS.SHROOMIE.GROUP',
       live: 'https://shroomie.felixrabenhold.de/',
       github: 'https://github.com/FelixRabenholdDev/Shroomy',
       technologies: [
@@ -45,10 +63,10 @@ export class MyProjects {
     },
     {
       title: 'Join',
-      duration: '2 weeks',
-      about: 'Kanban board like Trello.',
-      workProcess: 'Reusable components and TypeScript-based architecture.',
-      group: 'Worked in a team of 5, built backend database with firebase.',
+      durationKey: 'PROJECTS.JOIN.DURATION',
+      aboutKey: 'PROJECTS.JOIN.ABOUT',
+      workProcessKey: 'PROJECTS.JOIN.WORK_PROCESS',
+      groupKey: 'PROJECTS.JOIN.GROUP',
       live: 'https://join.felixrabenhold.de/',
       github: 'https://github.com/FelixRabenholdDev/Join',
       technologies: [
@@ -60,10 +78,10 @@ export class MyProjects {
     },
     {
       title: 'Coderr',
-      duration: '3 weeks',
-      about: 'Freelancer-developer platform.',
-      workProcess: 'Deploying server and database logic.',
-      group: 'Solo project.',
+      durationKey: 'PROJECTS.CODERR.DURATION',
+      aboutKey: 'PROJECTS.CODERR.ABOUT',
+      workProcessKey: 'PROJECTS.CODERR.WORK_PROCESS',
+      groupKey: 'PROJECTS.CODERR.GROUP',
       live: 'https://coderr.felixrabenhold.de/',
       github: 'https://github.com/FelixRabenholdDev/CoderrBE',
       technologies: [
@@ -77,6 +95,6 @@ export class MyProjects {
   ];
 
   selectTab(index: number) {
-  this.selectedTab = index;
+    this.selectedTab = index;
   }
 }

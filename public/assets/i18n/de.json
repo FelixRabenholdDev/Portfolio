@@ -40,6 +40,39 @@
       "QUOTE": "Felix überzeugt durch Eigenverantwortung und starke Kommunikation – er spricht Probleme sachlich und lösungsorientiert an. Seine strukturierte, analytische Arbeitsweise bringt Projekte spürbar voran."
     }
   },
+  "PROJECTS": {
+    "TITLE": "Meine Projekte",
+    "ABOUT_LABEL": "Über das Projekt",
+    "DURATION_LABEL": "Dauer",
+    "WORK_PROCESS_LABEL": "Wie ich meinen Arbeitsprozess organisiert habe",
+    "GROUP_LABEL": "Meine Erfahrung in der Teamarbeit",
+    "TECHNOLOGIES_LABEL": "Technologien",
+    "LIVE_TEST": "Live-Test",
+    "POKEDEX": {
+      "DURATION": "2 Wochen",
+      "ABOUT": "Nutzung der PokéAPI für eine individuelle Pokédex-Website.",
+      "WORK_PROCESS": "Modularisierte Komponenten, klare Benennung und ausführliche Dokumentation.",
+      "GROUP": "Solo-Projekt."
+    },
+    "SHROOMIE": {
+      "DURATION": "1 Woche",
+      "ABOUT": "Ein Jump-and-Run-Spiel, entwickelt mit JavaScript.",
+      "WORK_PROCESS": "Strukturierter Code mit Klassen sowie getrennter Logik und Darstellung.",
+      "GROUP": "Solo-Projekt."
+    },
+    "JOIN": {
+      "DURATION": "2 Wochen",
+      "ABOUT": "Ein Kanban-Board ähnlich wie Trello.",
+      "WORK_PROCESS": "Wiederverwendbare Komponenten und eine TypeScript-basierte Architektur.",
+      "GROUP": "Im Team von 5 Personen gearbeitet, Backend-Datenbank mit Firebase aufgebaut."
+    },
+    "CODERR": {
+      "DURATION": "3 Wochen",
+      "ABOUT": "Eine Plattform für Freelance-Entwickler.",
+      "WORK_PROCESS": "Deployment von Server- und Datenbanklogik.",
+      "GROUP": "Solo-Projekt."
+    }
+  },
   "CONTACT": {
     "HEADLINE": "Kontakt",
     "INTRO_TEXT_1": "Ich freue mich über Anfragen zu Stellenangeboten oder spannenden Projekten, bei denen ich mit meinen Fähigkeiten einen Mehrwert schaffen kann.",
