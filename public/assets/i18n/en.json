@@ -15,7 +15,7 @@
     "LOCATION_ICON_ALT": "Location icon",
     "LOCATION_HIGHLIGHT": "I am",
     "LOCATION_TEXT": "located in Bevern.",
-    "TEXT": "Code is more than syntax to me — it's the art of turning complex problems into clear, working solutions. I'm driven by analytical thinking paired with the creativity to find unconventional paths through tricky challenges. I bring persistence when a bug refuses to reveal itself, and in a team I value open communication just as much as collaborating on the best possible solution."
+    "TEXT": "I like working through a problem systematically instead of jumping straight into code — first understanding what's actually needed, then implementing it properly. With bugs, I stick with it until I find the actual root cause, not just patch the symptom. In a team, I communicate early and directly, so misunderstandings don't turn into extra work later."
   },
   "SKILLS": {
     "TITLE": "My Skills",
@@ -50,27 +50,27 @@
     "LIVE_TEST": "Live Test",
     "POKEDEX": {
       "DURATION": "2 weeks",
-      "ABOUT": "Use of the Pokédex API for an individual Pokédex site.",
-      "WORK_PROCESS": "Modularized components, clean naming, and extensive documentation.",
-      "GROUP": "Solo project."
+      "ABOUT": "A standalone Pokédex website that fetches data from the PokéAPI and presents it in a clear, browsable format. Users can search and view details like stats and types for each Pokémon.",
+      "WORK_PROCESS": "I split the app into clearly scoped, reusable components and kept naming consistent from the start so I could still follow the code after stepping away from it for a while. Every feature was documented before I considered it finished.",
+      "GROUP": "Solo project — I handled concept, implementation, and testing on my own."
     },
     "SHROOMIE": {
       "DURATION": "1 week",
-      "ABOUT": "A jump-and-run game built with JavaScript.",
-      "WORK_PROCESS": "Structured code with classes and separated logic and rendering.",
-      "GROUP": "Solo project."
+      "ABOUT": "A browser-based jump-and-run game built entirely in vanilla JavaScript — no framework, just a custom game loop, collision detection, and sprite animations.",
+      "WORK_PROCESS": "The code is organized into classes that clearly separate game logic from rendering. That separation made it much easier to test and adjust individual game mechanics without breaking something else along the way.",
+      "GROUP": "Solo project, built within a single week as part of a tightly timed sprint."
     },
     "JOIN": {
       "DURATION": "2 weeks",
-      "ABOUT": "A Kanban board similar to Trello.",
-      "WORK_PROCESS": "Reusable components and a TypeScript-based architecture.",
-      "GROUP": "Worked in a team of 5, built the backend database with Firebase."
+      "ABOUT": "A Kanban board modeled after Trello, where tasks can be dragged between columns like 'To Do', 'In Progress', and 'Done'. Each task supports assignees, due dates, and priority levels.",
+      "WORK_PROCESS": "The UI is built from reusable components, and the app logic is fully typed in TypeScript to catch errors at compile time rather than at runtime. We coordinated task distribution through short daily check-ins as a team.",
+      "GROUP": "Built in a team of 5. I was responsible for the Firebase backend — from data modeling to real-time synchronization of tasks across all users."
     },
     "CODERR": {
       "DURATION": "3 weeks",
-      "ABOUT": "A platform for freelance developers.",
-      "WORK_PROCESS": "Deploying server and database logic.",
-      "GROUP": "Solo project."
+      "ABOUT": "A platform where freelance developers can create profiles, post job listings, and submit offers — comparable to a specialized marketplace for developer services.",
+      "WORK_PROCESS": "The focus was on the backend: I set up the server infrastructure and containerized the application to make deployment reproducible regardless of the local environment.",
+      "GROUP": "Solo project — from API design through to production deployment on my own server."
     }
   },
   "CONTACT": {

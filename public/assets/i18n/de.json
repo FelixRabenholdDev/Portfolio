@@ -15,7 +15,7 @@
     "LOCATION_ICON_ALT": "Standort-Icon",
     "LOCATION_HIGHLIGHT": "Ich befinde mich",
     "LOCATION_TEXT": "in Bevern.",
-    "TEXT": "Code ist für mich mehr als nur Syntax – es ist die Kunst, komplexe Probleme in klare, funktionierende Lösungen zu verwandeln. Mich treibt eine analytische Denkweise an, gepaart mit der Kreativität, auch bei kniffligen Herausforderungen unkonventionelle Wege zu finden. Ausdauer bringe ich mit, wenn ein Bug sich hartnäckig versteckt, und im Team schätze ich den offenen Austausch genauso wie das gemeinsame Tüfteln an der besten Lösung."
+    "TEXT": "Ich arbeite mich gerne strukturiert durch ein Problem, statt drauflos zu coden – erst verstehen, was wirklich gebraucht wird, dann sauber umsetzen. Bei Bugs bleibe ich dran, bis ich die eigentliche Ursache gefunden habe, nicht nur das Symptom behoben ist. Im Team kommuniziere ich früh und direkt, damit Missverständnisse gar nicht erst zu Mehrarbeit führen."
   },
   "SKILLS": {
     "TITLE": "Meine Skills",
@@ -50,27 +50,27 @@
     "LIVE_TEST": "Live-Test",
     "POKEDEX": {
       "DURATION": "2 Wochen",
-      "ABOUT": "Nutzung der PokéAPI für eine individuelle Pokédex-Website.",
-      "WORK_PROCESS": "Modularisierte Komponenten, klare Benennung und ausführliche Dokumentation.",
-      "GROUP": "Solo-Projekt."
+      "ABOUT": "Eine eigenständige Pokédex-Website, die Daten der PokéAPI abruft und übersichtlich darstellt. Nutzer können Pokémon durchsuchen und Detailinformationen wie Statuswerte und Typen einsehen.",
+      "WORK_PROCESS": "Ich habe die App in klar abgegrenzte, wiederverwendbare Komponenten aufgeteilt und von Anfang an auf konsistente Benennung geachtet, um den Code auch nach längerer Pause schnell wieder nachvollziehen zu können. Jede Funktion wurde dokumentiert, bevor sie als abgeschlossen galt.",
+      "GROUP": "Solo-Projekt – Konzeption, Umsetzung und Testing lagen komplett in meiner Verantwortung."
     },
     "SHROOMIE": {
       "DURATION": "1 Woche",
-      "ABOUT": "Ein Jump-and-Run-Spiel, entwickelt mit JavaScript.",
-      "WORK_PROCESS": "Strukturierter Code mit Klassen sowie getrennter Logik und Darstellung.",
-      "GROUP": "Solo-Projekt."
+      "ABOUT": "Ein browserbasiertes Jump-and-Run-Spiel, das komplett mit Vanilla JavaScript umgesetzt wurde – ohne Framework, dafür mit eigener Game-Loop, Kollisionserkennung und Sprite-Animationen.",
+      "WORK_PROCESS": "Der Code ist in Klassen strukturiert, die jeweils klar zwischen Spiellogik und Rendering trennen. Diese Trennung hat es deutlich einfacher gemacht, einzelne Spielmechaniken zu testen und anzupassen, ohne an anderer Stelle etwas zu zerschießen.",
+      "GROUP": "Solo-Projekt, entstanden innerhalb einer Woche im Rahmen eines eng getakteten Sprints."
     },
     "JOIN": {
       "DURATION": "2 Wochen",
-      "ABOUT": "Ein Kanban-Board ähnlich wie Trello.",
-      "WORK_PROCESS": "Wiederverwendbare Komponenten und eine TypeScript-basierte Architektur.",
-      "GROUP": "Im Team von 5 Personen gearbeitet, Backend-Datenbank mit Firebase aufgebaut."
+      "ABOUT": "Ein Kanban-Board nach dem Vorbild von Trello, mit dem Aufgaben per Drag-and-Drop zwischen Spalten wie 'To Do', 'In Progress' und 'Done' verschoben werden können. Nutzer, Fristen und Prioritäten lassen sich pro Aufgabe verwalten.",
+      "WORK_PROCESS": "Die Oberfläche besteht aus wiederverwendbaren Komponenten, die App-Logik ist konsequent in TypeScript typisiert, um Fehler schon beim Kompilieren statt erst zur Laufzeit zu erkennen. Die Aufgabenverteilung im Team haben wir über tägliche kurze Absprachen koordiniert.",
+      "GROUP": "Im Team von 5 Personen entwickelt. Ich habe die Backend-Anbindung an Firebase übernommen – von der Datenmodellierung bis zur Echtzeit-Synchronisation der Aufgaben zwischen allen Nutzern."
     },
     "CODERR": {
       "DURATION": "3 Wochen",
-      "ABOUT": "Eine Plattform für Freelance-Entwickler.",
-      "WORK_PROCESS": "Deployment von Server- und Datenbanklogik.",
-      "GROUP": "Solo-Projekt."
+      "ABOUT": "Eine Plattform, auf der Freelance-Entwickler Profile anlegen, Aufträge ausschreiben und Angebote abgeben können – vergleichbar mit einem spezialisierten Marktplatz für Entwicklerdienstleistungen.",
+      "WORK_PROCESS": "Der Fokus lag auf dem Backend: Ich habe die Server-Infrastruktur aufgesetzt und die Anwendung containerisiert, um sie unabhängig von der lokalen Umgebung reproduzierbar deployen zu können.",
+      "GROUP": "Solo-Projekt – von der API-Konzeption bis zum produktiven Deployment auf einem eigenen Server."
     }
   },
   "CONTACT": {
