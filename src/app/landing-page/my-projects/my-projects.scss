@@ -149,14 +149,23 @@
       flex-direction: column;
       align-items: center;
       text-align: left;
+      padding: 0 40px;
 
       .image-wrapper{
+        padding: 15px 0;
+
         .image-area {
+          padding-top: 0;
+
           img {
             width: 90vw;
           }          
         }
       }
+    }
+
+    .tabs {
+      padding: 0 40px;
     }
 
     .technologies {
@@ -165,9 +174,17 @@
   }
 
   @media (max-width: 900px) {
-    .tabs button {
-      font-size: 18px;
-      padding: 10px 26px;
+    .tabs {
+      padding: 0 20px;
+
+      button {
+        font-size: 18px;
+        padding: 10px 26px;
+      }
+    }
+
+    .content-wrapper {
+      padding: 0 20px;
     }
   }
 
@@ -175,38 +192,96 @@
     padding: 30px 15px;
 
     .content-wrapper {
-      gap: 30px;
+      gap: 10px;
       border-radius: 0 0 25px 25px;
-    }
+      padding: 0;
 
-    .content {
-      padding: 25px !important;
+      .content {
+        padding: 25px !important;
+        list-style: none;
+        list-style-image: none;
+
+        .section:last-child {
+          margin-bottom: 0;
+        }
+
+        li {
+          position: relative;
+          padding-left: 18px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-image: url('../../../../public/assets/img/listing_elipse.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+
+        .section {
+          h4 {
+            font-size: 20px;
+
+            span {
+              font-size: 14px;
+              padding-left: 10px;
+            }
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
     }
 
     .tabs {
+      padding: 0;
       justify-content: space-between;
-      gap: 20px;
+      gap: 12px;
 
       button {
-        padding: 20px 10px;
+        padding: 16px 12px;
+        font-size: 16px;
       }
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .tabs {
-      gap: 0;
+      gap: 6px;
 
       button {
-        padding: 10px 5px;
-        font-size: 14px;
+        padding: 10px 6px;
+        font-size: 13px;
+
         &.active {
-          padding-top: 0;
-          padding-bottom: 0;
+          padding-top: 8px;
+          padding-bottom: 8px;
         }
       }
     }
-  }  
+  }
+
+  @media (max-width: 360px) {
+    .tabs {
+      gap: 2px;
+
+      button {
+        padding: 8px 3px;
+        font-size: 11px;
+
+        &.active {
+          padding-top: 6px;
+          padding-bottom: 6px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1440px) {

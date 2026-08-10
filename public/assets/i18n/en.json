@@ -8,7 +8,10 @@
   "HERO": {
     "SUBTITLE": "FULLSTACK DEVELOPER",
     "PORTRAIT_ALT": "Portrait",
-    "LOGO_ALT": "Developer Logo"
+    "LOGO_ALT": "Developer Logo",
+    "GITHUB_ARIA": "Open GitHub profile",
+    "LINKEDIN_ARIA": "Open LinkedIn profile",
+    "MAIL_ARIA": "Send an email"
   },
     "WHY_ME": {
     "TITLE": "Why me",
@@ -91,7 +94,10 @@
     "ERROR": "Something went wrong. Please try again later."
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Legal notice"
+    "LEGAL_NOTICE": "Legal notice",
+    "GITHUB_ARIA": "Open GitHub profile",
+    "LINKEDIN_ARIA": "Open LinkedIn profile",
+    "MAIL_ARIA": "Send an email"
   },
   "LEGAL": {
     "TITLE": "Legal Notice",

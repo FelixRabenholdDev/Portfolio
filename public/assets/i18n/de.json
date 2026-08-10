@@ -8,7 +8,10 @@
   "HERO": {
     "SUBTITLE": "FULLSTACK ENTWICKLER",
     "PORTRAIT_ALT": "Portrait",
-    "LOGO_ALT": "Entwickler-Logo"
+    "LOGO_ALT": "Entwickler-Logo",
+    "GITHUB_ARIA": "GitHub-Profil öffnen",
+    "LINKEDIN_ARIA": "LinkedIn-Profil öffnen",
+    "MAIL_ARIA": "E-Mail schreiben"
   },
   "WHY_ME": {
     "TITLE": "Warum ich",
@@ -91,7 +94,10 @@
     "ERROR": "Etwas ist schiefgelaufen. Bitte versuch es später erneut."
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Impressum"
+    "LEGAL_NOTICE": "Impressum",
+    "GITHUB_ARIA": "GitHub-Profil öffnen",
+    "LINKEDIN_ARIA": "LinkedIn-Profil öffnen",
+    "MAIL_ARIA": "E-Mail schreiben"
   },
   "LEGAL": {
     "TITLE": "Impressum",
