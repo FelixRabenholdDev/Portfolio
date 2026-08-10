@@ -1,0 +1,108 @@
+<app-nav-bar></app-nav-bar>
+<app-burger-menu></app-burger-menu>
+
+<section class="privacy-policy widescreen">
+  <h1>{{ 'PRIVACY.TITLE' | translate }}</h1>
+
+  <h2>{{ 'PRIVACY.OVERVIEW.TITLE' | translate }}</h2>
+
+  <h3>{{ 'PRIVACY.OVERVIEW.GENERAL_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.OVERVIEW.GENERAL_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.OVERVIEW.COLLECTION_TITLE' | translate }}</h3>
+
+  <p class="question">{{ 'PRIVACY.OVERVIEW.RESPONSIBLE_Q' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.RESPONSIBLE_A' | translate }}</p>
+
+  <p class="question">{{ 'PRIVACY.OVERVIEW.HOW_Q' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.HOW_A_1' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.HOW_A_2' | translate }}</p>
+
+  <p class="question">{{ 'PRIVACY.OVERVIEW.WHY_Q' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.WHY_A' | translate }}</p>
+
+  <p class="question">{{ 'PRIVACY.OVERVIEW.RIGHTS_Q' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.RIGHTS_A' | translate }}</p>
+  <p>{{ 'PRIVACY.OVERVIEW.RIGHTS_CONTACT' | translate }}</p>
+
+  <h2>{{ 'PRIVACY.HOSTING.TITLE' | translate }}</h2>
+  <p>{{ 'PRIVACY.HOSTING.INTRO' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.HOSTING.EXTERNAL_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.HOSTING.TEXT_1' | translate }}</p>
+  <p>{{ 'PRIVACY.HOSTING.TEXT_2' | translate }}</p>
+  <p>{{ 'PRIVACY.HOSTING.TEXT_3' | translate }}</p>
+
+  <p class="address-block">
+    {{ 'PRIVACY.HOSTING.PROVIDER_NAME' | translate }}<br />
+    {{ 'PRIVACY.HOSTING.PROVIDER_STREET' | translate }}<br />
+    {{ 'PRIVACY.HOSTING.PROVIDER_CITY' | translate }}<br />
+    {{ 'PRIVACY.HOSTING.PROVIDER_COUNTRY' | translate }}<br />
+    {{ 'PRIVACY.HOSTING.PROVIDER_VAT' | translate }}
+  </p>
+
+  <h2>{{ 'PRIVACY.GENERAL_INFO.TITLE' | translate }}</h2>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.DATA_PROTECTION_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.DATA_PROTECTION_TEXT_1' | translate }}</p>
+  <p>{{ 'PRIVACY.GENERAL_INFO.DATA_PROTECTION_TEXT_2' | translate }}</p>
+  <p>{{ 'PRIVACY.GENERAL_INFO.DATA_PROTECTION_TEXT_3' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.CONTROLLER_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.CONTROLLER_INTRO' | translate }}</p>
+  <p class="address-block">
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_NAME' | translate }}<br />
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_CARE_OF' | translate }}<br />
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_STREET' | translate }}<br />
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_CITY' | translate }}<br /><br />
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_PHONE_LABEL' | translate }}: {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_PHONE' | translate }}<br />
+    {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_EMAIL_LABEL' | translate }}: {{ 'PRIVACY.GENERAL_INFO.CONTROLLER_EMAIL' | translate }}
+  </p>
+  <p>{{ 'PRIVACY.GENERAL_INFO.CONTROLLER_NOTE' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.RETENTION_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.RETENTION_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.LEGAL_BASIS_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.LEGAL_BASIS_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.RECIPIENTS_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.RECIPIENTS_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.REVOCATION_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.REVOCATION_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.OBJECTION_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.OBJECTION_TEXT_1' | translate }}</p>
+  <p>{{ 'PRIVACY.GENERAL_INFO.OBJECTION_TEXT_2' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.COMPLAINT_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.COMPLAINT_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.PORTABILITY_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.PORTABILITY_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.ACCESS_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.ACCESS_TEXT' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.GENERAL_INFO.RESTRICTION_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.GENERAL_INFO.RESTRICTION_TEXT' | translate }}</p>
+  <ul>
+    <li *ngFor="let reason of restrictionReasons">{{ reason | translate }}</li>
+  </ul>
+  <p>{{ 'PRIVACY.GENERAL_INFO.RESTRICTION_NOTE' | translate }}</p>
+
+  <h2>{{ 'PRIVACY.DATA_COLLECTION.TITLE' | translate }}</h2>
+
+  <h3>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_FORM_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_FORM_TEXT_1' | translate }}</p>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_FORM_TEXT_2' | translate }}</p>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_FORM_TEXT_3' | translate }}</p>
+
+  <h3>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_CHANNELS_TITLE' | translate }}</h3>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_CHANNELS_TEXT_1' | translate }}</p>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_CHANNELS_TEXT_2' | translate }}</p>
+  <p>{{ 'PRIVACY.DATA_COLLECTION.CONTACT_CHANNELS_TEXT_3' | translate }}</p>
+
+  <p class="date">{{ 'PRIVACY.DATE_LABEL' | translate }}: {{ currentDate }}</p>
+</section>

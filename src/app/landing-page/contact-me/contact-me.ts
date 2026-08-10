@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { HttpClient} from '@angular/common/http';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -11,7 +12,7 @@ interface MailResponse {
 
 @Component({
   selector: 'app-contact-me',
-  imports: [FormsModule, CommonModule, TranslatePipe],
+  imports: [FormsModule, CommonModule, TranslatePipe, RouterLink],
   templateUrl: './contact-me.html',
   styleUrls: ['./contact-me.scss'],  
 })
