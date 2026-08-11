@@ -28,10 +28,10 @@
     width: 60px;
     height: 100px;
 
-    @media (max-width: 600px) {
-      width: 60px;
-      height: 90px;
-    }
+    // @media (max-width: 600px) {
+    //   width: 60px;
+    //   height: 90px;
+    // }
 
     img {
       width: 50px;
@@ -42,7 +42,7 @@
     span {
       line-height: 1.2;
       text-align: center;
-      font-size: 13px;
+      font-size: 16px;
     }
   }
 
@@ -81,19 +81,19 @@
         align-items: center;
 
         img {
-          width: 40px;
+          width: 30px;
         }
         
         span {
           margin-top: 8px;
-          font-size: 13px;
+          font-size: 16px;
           text-align: center;
         }
       }
     }
 
     .learning-text {
-      font-size: 1rem;
+      font-size: 16px;
       line-height: 1.4;
       max-width: 260px;
     }
@@ -151,13 +151,14 @@
     .learning-text {
       max-width: 240px;
       text-align: left;
+      line-height: 1.2;
     }
 
     .learning-icons {
       flex-direction: row;
       justify-content: space-evenly;
       height: 140px;
-      padding: 0 20px;
+      padding: 0 10px;
       width: auto;
       gap: 10px;
       background-image: url('../../../../public/assets/img/skill_shape.svg');
@@ -190,6 +191,10 @@
 }
 
 @media (max-width: 600px) {
+  .skill-item {
+      height: 90px;
+  }
+
   .skills__grid {
     grid-template-columns: repeat(3, 90px);
   }

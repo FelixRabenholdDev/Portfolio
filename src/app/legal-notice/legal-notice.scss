@@ -50,3 +50,10 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .widescreen {
+    padding-left: calc((100% - 1160px) / 2);
+    padding-right: calc((100% - 1160px) / 2);
+  }
+}
