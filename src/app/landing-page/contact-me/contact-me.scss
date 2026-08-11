@@ -1,4 +1,4 @@
-@import '../../../styles.scss';
+@import '../../../variables.scss';
 
 .contact {
   padding: 90px 200px;
@@ -288,19 +288,19 @@
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('assets/img/check_box.svg');
+  background-image: url('../../../../public/assets/img/check_box.svg');
   transition: background-image 0.18s ease, transform 0.12s ease;
   z-index: 1;
   pointer-events: none;
 }
 
 .checkbox-box:hover .custom-checkbox {
-  background-image: url('assets/img/check_box_hover.svg');
+  background-image: url('../../../../public/assets/img/check_box_hover.svg');
   transform: scale(1.02);
 }
 
 .custom-checkbox.checked {
-  background-image: url('assets/img/check_box_checked.svg');
+  background-image: url('../../../../public/assets/img/check_box_checked.svg');
   transform: scale(1);
 }
 

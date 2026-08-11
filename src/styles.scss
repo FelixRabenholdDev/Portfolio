@@ -1,23 +1,15 @@
-$bg-color: #0a383f;
-$pr-color: #f9cb71;
-$pr-color2: rgba(249, 203, 113, 0.07);
-$se-color: #ffffff;
-$font-color: #f8f5ec;
-$nav-font-color: #262e34;
-$in-color: #262e3423;
-$er-color: #e44c36;
-$do-color: #97e163;
+@import 'variables';
 
 @font-face {
   font-family: 'josefin';
-  src: url('fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+  src: url('../public/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'anta';
-  src: url('fonts/Anta/Anta-Regular.ttf') format('truetype');
+  src: url('../public/fonts/Anta/Anta-Regular.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
