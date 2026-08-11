@@ -1,7 +1,7 @@
 <nav class="navbar widescreen">
-  <div class="logo-wrapper">
+  <a class="logo-wrapper" routerLink="/" (click)="onLogoClick($event)" [attr.aria-label]="'NAV.HOME_ARIA' | translate">
     <img src="assets/img/logo2.png" alt="Developer Logo 2" class="logo" />
-  </div>
+  </a>
 
   <ul class="nav-links">
     <li><a href="#why">{{ 'NAV.WHY' | translate }}</a></li>
