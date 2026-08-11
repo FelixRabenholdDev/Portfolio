@@ -34,7 +34,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $safeEmail = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
         $safeMessage = nl2br(htmlspecialchars($userMessage, ENT_QUOTES, 'UTF-8'));
 
-        $recipient = 'rabenhold.developer@gmx.de';
+        $recipient = 'developer@felixrabenhold.de';
         $subject = 'Website Contact Form';
 
         $mailBody = "
