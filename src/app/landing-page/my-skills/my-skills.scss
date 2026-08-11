@@ -18,7 +18,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(4, 120px);
-    justify-content: center;
+    justify-items: center;
   }
 
   .skill-item {
@@ -27,11 +27,6 @@
     align-items: center;
     width: 60px;
     height: 100px;
-
-    // @media (max-width: 600px) {
-    //   width: 60px;
-    //   height: 90px;
-    // }
 
     img {
       width: 50px;
