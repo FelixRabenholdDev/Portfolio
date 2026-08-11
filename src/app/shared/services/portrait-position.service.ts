@@ -22,8 +22,5 @@ export class PortraitPositionService {
     root.setProperty('--portrait-left', `${rect.left}px`);
     root.setProperty('--portrait-width', `${rect.width}px`);
     root.setProperty('--portrait-height', `${rect.height}px`);
-
-    // Zum Debuggen - kannst du später entfernen
-    console.log('[PortraitPositionService] sync:', rect);
   }
 }
