@@ -48,31 +48,31 @@
 
 @keyframes burgerOpen {
   0% {
-    content: url('/assets/img/burger_menu_t0.svg');
+    content: url('assets/img/burger_menu_t0.svg');
   }
   33% {
-    content: url('/assets/img/burger_menu_t1.svg');
+    content: url('assets/img/burger_menu_t1.svg');
   }
   66% {
-    content: url('/assets/img/burger_menu_t2.svg');
+    content: url('assets/img/burger_menu_t2.svg');
   }
   100% {
-    content: url('/assets/img/burger_menu_t3.svg');
+    content: url('assets/img/burger_menu_t3.svg');
   }
 }
 
 @keyframes burgerClose {
   0% {
-    content: url('/assets/img/burger_menu_t3.svg');
+    content: url('assets/img/burger_menu_t3.svg');
   }
   33% {
-    content: url('/assets/img/burger_menu_t2.svg');
+    content: url('assets/img/burger_menu_t2.svg');
   }
   66% {
-    content: url('/assets/img/burger_menu_t1.svg');
+    content: url('assets/img/burger_menu_t1.svg');
   }
   100% {
-    content: url('/assets/img/burger_menu_t0.svg');
+    content: url('assets/img/burger_menu_t0.svg');
   }
 }
 
@@ -106,7 +106,7 @@
     width: var(--portrait-width, min(450px, 90vw));
     height: var(--portrait-height, auto);
     max-width: 90vw;
-    background-image: url('/assets/img/shape.svg');
+    background-image: url('assets/img/shape.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
