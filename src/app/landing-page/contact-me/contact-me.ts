@@ -10,6 +10,8 @@ interface MailResponse {
   error?: string;
 }
 
+type EmailErrorType = 'required' | 'invalid' | null;
+
 @Component({
   selector: 'app-contact-me',
   imports: [FormsModule, CommonModule, TranslatePipe, RouterLink],
@@ -27,6 +29,7 @@ export class ContactMe {
 
   nameError = false;
   emailError = false;
+  emailErrorType: EmailErrorType = null;
   messageError = false;
   privacyAccepted = false;
   privacyError = false;
@@ -47,14 +50,39 @@ export class ContactMe {
     },
   };
 
+  onNameBlur(): void {
+    this.nameError = !this.isValid(this.contactData.name);
+  }
+
+  onEmailBlur(): void {
+    if (!this.isValid(this.contactData.email)) {
+      this.emailError = true;
+      this.emailErrorType = 'required';
+    } else if (!this.isEmailValid(this.contactData.email)) {
+      this.emailError = true;
+      this.emailErrorType = 'invalid';
+    } else {
+      this.emailError = false;
+      this.emailErrorType = null;
+    }
+  }
+
+  onMessageBlur(): void {
+    this.messageError = !this.isValid(this.contactData.message);
+  }
+
+  onPrivacyBlur(): void {
+    this.privacyError = !this.privacyAccepted;
+  }
+
   send(ngForm: NgForm): void {
     this.submitSuccess = false;
     this.submitError = false;
     
-    this.nameError = !this.isValid(this.contactData.name);
-    this.messageError = !this.isValid(this.contactData.message);
-    this.emailError = !this.isEmailValid(this.contactData.email);
-    this.privacyError = !this.privacyAccepted;
+    this.onNameBlur();
+    this.onEmailBlur();
+    this.onMessageBlur();
+    this.onPrivacyBlur();
 
     if (this.nameError || this.emailError || this.messageError || this.privacyError) {
       return;
@@ -112,7 +140,7 @@ export class ContactMe {
     this.contactData[field] = input.value;
 
     if (field === 'name') this.nameError = false;
-    if (field === 'email') this.emailError = false;
+    if (field === 'email') { this.emailError = false; this.emailErrorType = null; }
     if (field === 'message') this.messageError = false;
     });
   }
@@ -120,6 +148,10 @@ export class ContactMe {
   private resetForm(ngForm: NgForm): void {
     this.contactData = { name: '', email: '', message: '' };
     this.privacyAccepted = false;
+    this.nameError = false;
+    this.emailError = false;
+    this.emailErrorType = null;
+    this.messageError = false;
     ngForm.resetForm();
   }
 }

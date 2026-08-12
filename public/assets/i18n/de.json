@@ -91,7 +91,12 @@
     "SEND": "Senden",
     "SENDING": "Wird gesendet …",
     "SUCCESS": "Danke für deine Nachricht! Ich melde mich zeitnah bei dir.",
-    "ERROR": "Etwas ist schiefgelaufen. Bitte versuch es später erneut."
+    "ERROR": "Etwas ist schiefgelaufen. Bitte versuch es später erneut.",
+    "NAME_REQUIRED": "Bitte gib deinen Namen ein",
+    "EMAIL_REQUIRED": "Bitte gib deine E-Mail-Adresse ein",
+    "EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein",
+    "PRIVACY_REQUIRED_HINT": "Bitte akzeptiere zuerst die Datenschutzerklärung"
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Impressum",

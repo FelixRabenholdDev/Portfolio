@@ -36,8 +36,12 @@
           [class.error]="nameError"
           [class.valid]="!nameError && isValid(contactData.name)"
           (input)="nameError = false"
+          (blur)="onNameBlur()"
           (animationstart)="onAutofillDetected($event, 'name')"
         />
+        @if (nameError) {
+          <span class="field-error">{{ 'CONTACT.NAME_REQUIRED' | translate }}</span>
+        }
       </div>
 
       <div class="field">
@@ -49,8 +53,15 @@
           [class.error]="emailError"
           [class.valid]="!emailError && isEmailValid(contactData.email)"
           (input)="emailError = false"
+          (blur)="onEmailBlur()"
           (animationstart)="onAutofillDetected($event, 'email')"
         />
+        @if (emailError && emailErrorType === 'required') {
+          <span class="field-error">{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</span>
+        }
+        @if (emailError && emailErrorType === 'invalid') {
+          <span class="field-error">{{ 'CONTACT.EMAIL_INVALID' | translate }}</span>
+        }
       </div>
     </div>
 
@@ -64,6 +75,9 @@
         (input)="messageError = false"
         (animationstart)="onAutofillDetected($event, 'message')"
       ></textarea>
+      @if (messageError) {
+        <span class="field-error">{{ 'CONTACT.MESSAGE_REQUIRED' | translate }}</span>
+      }
     </div>
 
     <label class="privacy-row">
@@ -74,8 +88,13 @@
           class="real-checkbox" 
           [(ngModel)]="privacyAccepted"
           (change)="privacyError = false"
+          (blur)="onPrivacyBlur()"
         />
-        <span class="custom-checkbox" [class.checked]="privacyAccepted"></span>
+        <span 
+          class="custom-checkbox"
+          [class.checked]="privacyAccepted"
+          [class.error]="privacyError"
+        ></span>
       </span>
 
       <span class="privacy-text">
@@ -98,7 +117,11 @@
     }
 
     <div class="send-wrapper">
-      <button class="send-btn" [disabled]="isSending">
+      <button 
+        class="send-btn"
+        [disabled]="isSending || !privacyAccepted"
+        [attr.title]="!privacyAccepted ? ('CONTACT.PRIVACY_REQUIRED_HINT' | translate) : null"
+      >
         {{ (isSending ? 'CONTACT.SENDING' : 'CONTACT.SEND') | translate }}
       </button>
     </div>

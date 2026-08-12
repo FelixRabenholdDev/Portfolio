@@ -91,7 +91,12 @@
     "SEND": "Send",
     "SENDING": "Sending …",
     "SUCCESS": "Thanks for your message! I'll get back to you soon.",
-    "ERROR": "Something went wrong. Please try again later."
+    "ERROR": "Something went wrong. Please try again later.",
+    "NAME_REQUIRED": "Please enter your name",
+    "EMAIL_REQUIRED": "Please enter your email address",
+    "EMAIL_INVALID": "Please enter a valid email address",
+    "MESSAGE_REQUIRED": "Please enter a message",
+    "PRIVACY_REQUIRED_HINT": "Please accept the privacy policy first"
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Legal notice",

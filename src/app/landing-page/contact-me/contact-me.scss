@@ -21,18 +21,22 @@
   }
 
   @media (max-width: 950px) {
-    padding: 60px 20px;
+    padding: 40px 20px 60px;
+
+    .headline {
+      padding-bottom: 12px;
+    }
 
     .arrow {
       position: static;
       display: block;
-      margin: 50px auto 0;
+      margin: 40px auto 0;
     }
   }
 
   .intro-wrapper {
     max-width: 1100px;
-    margin: 0 auto 70px auto;
+    margin: 0 auto 30px auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -40,7 +44,8 @@
 
     @media (max-width: 950px) {
       flex-direction: column;
-      gap: 40px;
+      margin: 0 auto 24px auto;
+      gap: 20px;
     }
   }
 
@@ -69,7 +74,7 @@
     font-size: 17px;
 
     @media (max-width: 1100px) {
-      flex: 0 0 200px;
+      flex: 0 0 100px;
     }
 
     .detail-item {
@@ -114,12 +119,17 @@
     flex-direction: column;
     gap: 45px;
 
+    @media (max-width: 950px) {
+      gap: 26px;
+    }
+
     .row {
       display: flex;
       gap: 40px;
 
       @media (max-width: 950px) {
         flex-direction: column;
+        gap: 20px;
       }
     }
 
@@ -146,6 +156,12 @@
       input:-webkit-autofill,
       textarea:-webkit-autofill {
         animation-name: onAutoFillStart;
+      }
+
+      .field-error {
+        color: $er-color;
+        font-size: 13px;
+        margin-top: -2px;
       }
 
       label {
@@ -302,6 +318,10 @@
 .custom-checkbox.checked {
   background-image: url('../../../../public/assets/img/check_box_checked.svg');
   transform: scale(1);
+}
+
+.custom-checkbox.error {
+  background-image: url('../../../../public/assets/img/check_box_error.svg');
 }
 
 .submit-feedback {
