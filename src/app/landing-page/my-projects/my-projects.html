@@ -3,11 +3,12 @@
 
   <div class="tabs">
     <button
-      *ngFor="let tab of tabs; let i = index"
+      *ngFor="let project  of projectData; let i = index"
       (click)="selectTab(i)"
       [class.active]="selectedTab === i"
     >
-      {{ tab }}
+      <span class="tab-number">{{ i + 1 }}.</span>
+      <span class="tab-name">{{ project.title }}</span>
     </button>
   </div>
 
@@ -15,6 +16,7 @@
     <div class="content-wrapper" animate.enter="fadeIn">
       <ul class="content">
         <li class="section">
+          <h3 class="project-title-mobile">{{ projectData[selectedTab].title }}</h3>
           <h4>
             {{ 'PROJECTS.ABOUT_LABEL' | translate }}
             <span>{{ 'PROJECTS.DURATION_LABEL' | translate }}: {{ projectData[selectedTab].durationKey | translate }}</span>

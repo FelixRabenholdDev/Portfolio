@@ -6,7 +6,7 @@
 
   .tabs {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 28px;
     padding: 0 80px;
 
@@ -17,6 +17,10 @@
       cursor: pointer;
       transition: all 0.3s ease;
       font-family: 'josefin', sans-serif;
+
+      .tab-name {
+        margin-left: 4px;
+      }
 
       &:hover {
         color: $se-color;
@@ -31,6 +35,10 @@
         padding-bottom: 25px;
       }
     }
+  }
+
+  .project-title-mobile {
+    display: none;
   }
 
   .content-wrapper {
@@ -241,44 +249,47 @@
 
     .tabs {
       padding: 0;
-      justify-content: space-between;
+      justify-content: space-evenly;
       gap: 12px;
 
       button {
-        padding: 16px 12px;
+        padding: 16px 26px;
         font-size: 16px;
+
+        .tab-name {
+          display: none;
+        }
       }
+    }
+
+    .project-title-mobile {
+      display: block;
+      color: $pr-color;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
     }
   }
 
   @media (max-width: 480px) {
-    .tabs {
-      gap: 6px;
+    .tabs button {
+      padding: 10px 26px;
+      font-size: 16px;
 
-      button {
-        padding: 10px 6px;
-        font-size: 16px;
-
-        &.active {
-          padding-top: 8px;
-          padding-bottom: 8px;
-        }
+      &.active {
+        padding-top: 8px;
+        padding-bottom: 8px;
       }
     }
   }
 
   @media (max-width: 360px) {
-    .tabs {
-      gap: 2px;
+    .tabs button {
+      padding: 8px 26px;
 
-      button {
-        padding: 8px 3px;
-        font-size: 11px;
-
-        &.active {
-          padding-top: 6px;
-          padding-bottom: 6px;
-        }
+      &.active {
+        padding-top: 6px;
+        padding-bottom: 6px;
       }
     }
   }

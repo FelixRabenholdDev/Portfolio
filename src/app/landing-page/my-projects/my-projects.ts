@@ -27,7 +27,6 @@ interface Project {
   styleUrls: ['./my-projects.scss'],  
 })
 export class MyProjects {
-  tabs = ['1. Pokedex', '2. Shroomie', '3. Join', '4. Coderr'];
   selectedTab = 0;
 
   projectData: Project[] = [
