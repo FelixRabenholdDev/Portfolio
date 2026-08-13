@@ -73,6 +73,7 @@
         [class.error]="messageError"
         [class.valid]="!messageError && isValid(contactData.message)"
         (input)="messageError = false"
+        (blur)="onMessageBlur()"
         (animationstart)="onAutofillDetected($event, 'message')"
       ></textarea>
       @if (messageError) {

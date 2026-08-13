@@ -22,13 +22,13 @@ export class Colleagues {
       name: 'Paul Angeles Chaquire',
       project: 'Kochwelt',
       quoteKey: 'COLLEAGUES.PAUL.QUOTE',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/paul-angeles-chaquire/',
     },
     {
       name: 'Jürgen Malinowski',
       project: 'Join',
       quoteKey: 'COLLEAGUES.JUERGEN.QUOTE',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/j%C3%BCrgen-malinowski-289253425/',
     },
     {
       name: 'Emil Marsal',
