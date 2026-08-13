@@ -19,11 +19,25 @@
   scroll-behavior: smooth;
 }
 
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-landing-page,
+app-legal-notice,
+app-privacy-policy {
+  display: block;
+  flex: 1;
+}
+
 body {
   background-color: $bg-color;
   color: $font-color;
   margin: 0;
   font-family: 'josefin', sans-serif;
+  height: 100%;
 }
 
 h1 {
@@ -69,6 +83,7 @@ app-nav-bar {
 }
 
 html {
+  height: 100%;
   scrollbar-gutter: stable;
 }
 
