@@ -14,12 +14,27 @@
 
   @for (tab of [selectedTab]; track tab) {
     <div class="content-wrapper" animate.enter="fadeIn">
+      <div class="mobile-summary">
+        <h3 class="mobile-title">{{ projectData[selectedTab].title }}</h3>
+        <p class="mobile-tech-text">
+          {{ 'PROJECTS.TECHNOLOGIES_LABEL' | translate }}: {{ getTechNames(projectData[selectedTab]) }}
+        </p>
+        <p class="mobile-duration-text">
+          {{ 'PROJECTS.DURATION_LABEL' | translate }}: {{ projectData[selectedTab].durationKey | translate }}
+        </p>
+        <div class="mobile-image">
+          <img
+            [src]="projectData[selectedTab].image"
+            [alt]="projectData[selectedTab].title + ' Screenshot'"
+          />
+        </div>
+      </div>
+
       <ul class="content">
         <li class="section">
-          <h3 class="project-title-mobile">{{ projectData[selectedTab].title }}</h3>
           <h4>
             {{ 'PROJECTS.ABOUT_LABEL' | translate }}
-            <span>{{ 'PROJECTS.DURATION_LABEL' | translate }}: {{ projectData[selectedTab].durationKey | translate }}</span>
+            <span class="desktop-duration">{{ 'PROJECTS.DURATION_LABEL' | translate }}: {{ projectData[selectedTab].durationKey | translate }}</span>
           </h4>
           <p class="text">{{ projectData[selectedTab].aboutKey | translate }}</p>
         </li>

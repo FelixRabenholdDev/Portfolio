@@ -37,10 +37,6 @@
     }
   }
 
-  .project-title-mobile {
-    display: none;
-  }
-
   .content-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -48,6 +44,10 @@
     gap: 20px;
     align-items: flex-start;
     padding: 0 80px;
+
+    .mobile-summary {
+      display: none;
+    }
 
     .content {
       flex: 1;      
@@ -159,25 +159,81 @@
       text-align: left;
       padding: 0 40px;
 
-      .image-wrapper{
+      .image-wrapper {
         padding: 15px 0;
 
         .image-area {
-          padding-top: 0;
+          display: none;
+        }
+      }
+
+      .technologies {
+        display: none;
+      }
+
+      .mobile-summary {
+        display: block;
+        order: -1;
+        width: 100%;
+        margin-bottom: 24px;
+
+        .mobile-title {
+          color: $pr-color;
+          font-size: 30px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .mobile-tech-text,
+        .mobile-duration-text {
+          font-size: 15px;
+          opacity: 0.85;
+          margin-bottom: 4px;
+        }
+
+        .mobile-image {
+          margin-top: 20px;
 
           img {
-            width: 90vw;
-          }          
+            width: 100%;
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .content {
+        list-style: none;
+        list-style-image: none;
+
+        .desktop-duration {
+          display: none;
+        }
+
+        li {
+          position: relative;
+          padding-left: 26px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            background-image: url('../../../../public/assets/img/listing_elipse.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
         }
       }
     }
 
     .tabs {
       padding: 0 40px;
-    }
 
-    .technologies {
-      display: none;
+      .tab-name {
+        display: none;
+      }
     }
   }
 
@@ -206,28 +262,9 @@
 
       .content {
         padding: 25px !important;
-        list-style: none;
-        list-style-image: none;
 
         .section:last-child {
           margin-bottom: 0;
-        }
-
-        li {
-          position: relative;
-          padding-left: 18px;
-
-          &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 10px;
-            height: 10px;
-            background-image: url('../../../../public/assets/img/listing_elipse.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-          }
         }
 
         .section {
@@ -245,6 +282,10 @@
           }
         }
       }
+
+      .mobile-summary {
+        padding: 0 25px;
+      }
     }
 
     .tabs {
@@ -255,19 +296,7 @@
       button {
         padding: 16px 26px;
         font-size: 16px;
-
-        .tab-name {
-          display: none;
-        }
       }
-    }
-
-    .project-title-mobile {
-      display: block;
-      color: $pr-color;
-      font-size: 22px;
-      font-weight: 500;
-      margin-bottom: 10px;
     }
   }
 

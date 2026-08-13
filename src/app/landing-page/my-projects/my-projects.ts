@@ -96,4 +96,8 @@ export class MyProjects {
   selectTab(index: number) {
     this.selectedTab = index;
   }
+
+  getTechNames(project: Project): string {
+    return project.technologies.map((t) => t.name).join(', ');
+  }
 }
