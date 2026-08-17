@@ -34,7 +34,7 @@ export class Colleagues {
       name: 'Emil Marsal',
       project: 'Join',
       quoteKey: 'COLLEAGUES.EMIL.QUOTE',
-      linkedin: '#',
+      linkedin: 'https://www.linkedin.com/in/emil-marsal-13a4aa423/',
     },
   ];
 }
